@@ -1,0 +1,97 @@
+PODS:
+  - CHIPageControl (0.1.8):
+    - CHIPageControl/Aji (= 0.1.8)
+    - CHIPageControl/Aleppo (= 0.1.8)
+    - CHIPageControl/Chimayo (= 0.1.8)
+    - CHIPageControl/Fresno (= 0.1.8)
+    - CHIPageControl/Jalapeno (= 0.1.8)
+    - CHIPageControl/Jaloro (= 0.1.8)
+    - CHIPageControl/Paprika (= 0.1.8)
+    - CHIPageControl/Puya (= 0.1.8)
+  - CHIPageControl/Aji (0.1.8)
+  - CHIPageControl/Aleppo (0.1.8)
+  - CHIPageControl/Chimayo (0.1.8)
+  - CHIPageControl/Fresno (0.1.8)
+  - CHIPageControl/Jalapeno (0.1.8)
+  - CHIPageControl/Jaloro (0.1.8)
+  - CHIPageControl/Paprika (0.1.8)
+  - CHIPageControl/Puya (0.1.8)
+  - DKCamera (1.6.7)
+  - DNSPageView (2.1.0)
+  - EachNavigationBar (1.14.5)
+  - ESTabBarController-swift (2.8.0)
+  - FanMenu (0.7.5):
+    - Macaw
+  - FSCalendar (2.8.2)
+  - HandyJSON (5.0.0-beta.1)
+  - LookinServer (1.0.4)
+  - Macaw (0.9.8):
+    - SWXMLHash
+  - pop (1.0.11)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (5.0.1)
+  - SWXMLHash (6.0.0)
+
+DEPENDENCIES:
+  - CHIPageControl (~> 0.1.3)
+  - DKCamera
+  - DNSPageView
+  - EachNavigationBar
+  - ESTabBarController-swift
+  - FanMenu
+  - FSCalendar
+  - HandyJSON (from `https://github.com/alibaba/HandyJSON.git`, branch `dev_for_swift5.0`)
+  - LookinServer
+  - pop (from `https://github.com/facebook/pop.git`)
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CHIPageControl
+    - DKCamera
+    - DNSPageView
+    - EachNavigationBar
+    - ESTabBarController-swift
+    - FanMenu
+    - FSCalendar
+    - LookinServer
+    - Macaw
+    - SnapKit
+    - SwiftyJSON
+    - SWXMLHash
+
+EXTERNAL SOURCES:
+  HandyJSON:
+    :branch: dev_for_swift5.0
+    :git: https://github.com/alibaba/HandyJSON.git
+  pop:
+    :git: https://github.com/facebook/pop.git
+
+CHECKOUT OPTIONS:
+  HandyJSON:
+    :commit: a2ba4e537711ae1fcd9183679c4db878eb171a78
+    :git: https://github.com/alibaba/HandyJSON.git
+  pop:
+    :commit: 87d1f8b74cdaa4699d7a9f6be1ff5202014c581f
+    :git: https://github.com/facebook/pop.git
+
+SPEC CHECKSUMS:
+  CHIPageControl: 76b35c8309d8dd155e869c109cc6ffc0aaa465ff
+  DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
+  DNSPageView: 4d77a61f49a5668ec330fb7bd620d81354371ea7
+  EachNavigationBar: 5a35d264688f7463042c7eb71799cb232ee44df1
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FanMenu: f26be76147954666be0b89ae6ffeb12b72167f2b
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
+  LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
+  Macaw: a361fab744f87f108f0376c3204357e4068f2630
+  pop: ae3ae187018759968252242e175c21f7f9be5dd2
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SWXMLHash: 9d851ed3edf48ec2bd0db98f0cda0ad4136d75e3
+
+PODFILE CHECKSUM: edce11d336f5f295e183f78ac7d0023e63a6d8bf
+
+COCOAPODS: 1.11.2

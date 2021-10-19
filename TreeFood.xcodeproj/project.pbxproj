@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E91D6DE25A7A3EC13650861 /* Pods_TreeFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5273B4DA82728CEB79516E72 /* Pods_TreeFood.framework */; };
+		93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AAB271E722F0094AA60 /* HomeViewController.swift */; };
+		93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB0271E729B0094AA60 /* MineViewController.swift */; };
+		93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB5271E72E60094AA60 /* RecordViewController.swift */; };
+		93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABA271E73630094AA60 /* AnalyzeViewController.swift */; };
+		93449ABE271E740E0094AA60 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABD271E740E0094AA60 /* File.swift */; };
 		93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF7271E682000EB1003 /* AppDelegate.swift */; };
 		93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF9271E682000EB1003 /* SceneDelegate.swift */; };
 		93981BFC271E682000EB1003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BFB271E682000EB1003 /* ViewController.swift */; };
@@ -36,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AA3784D92CF15B6DDB5F620 /* Pods-TreeFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeFood.release.xcconfig"; path = "Target Support Files/Pods-TreeFood/Pods-TreeFood.release.xcconfig"; sourceTree = "<group>"; };
+		5273B4DA82728CEB79516E72 /* Pods_TreeFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreeFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93449AAB271E722F0094AA60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		93449AB0271E729B0094AA60 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		93449AB5271E72E60094AA60 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		93449ABA271E73630094AA60 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
+		93449ABD271E740E0094AA60 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		93981BF4271E682000EB1003 /* TreeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981BF7271E682000EB1003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93981BF9271E682000EB1003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,7 @@
 		93981C14271E682600EB1003 /* TreeFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981C18271E682600EB1003 /* TreeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITests.swift; sourceTree = "<group>"; };
 		93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E249620CA0C60C818E7DBBD1 /* Pods-TreeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeFood.debug.xcconfig"; path = "Target Support Files/Pods-TreeFood/Pods-TreeFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E91D6DE25A7A3EC13650861 /* Pods_TreeFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,132 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4604814E860B95E01F2E5035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E249620CA0C60C818E7DBBD1 /* Pods-TreeFood.debug.xcconfig */,
+				1AA3784D92CF15B6DDB5F620 /* Pods-TreeFood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93449AA5271E71320094AA60 /* Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				93449AB9271E73390094AA60 /* View - Cell */,
+				93449AB8271E732E0094AA60 /* Model */,
+				93449AB7271E72F10094AA60 /* Analyze - Two */,
+				93449ABA271E73630094AA60 /* AnalyzeViewController.swift */,
+			);
+			path = Analyze;
+			sourceTree = "<group>";
+		};
+		93449AA6271E71540094AA60 /* Extension+Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Extension+Const";
+			sourceTree = "<group>";
+		};
+		93449AA7271E71C70094AA60 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		93449AA8271E71ED0094AA60 /* Home - Two */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Home - Two";
+			sourceTree = "<group>";
+		};
+		93449AA9271E72070094AA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93449AAA271E72100094AA60 /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
+		93449AAD271E72570094AA60 /* Mine - Two */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Mine - Two";
+			sourceTree = "<group>";
+		};
+		93449AAE271E72680094AA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93449AAF271E72760094AA60 /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
+		93449AB2271E72B50094AA60 /* Record - Two */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Record - Two";
+			sourceTree = "<group>";
+		};
+		93449AB3271E72C00094AA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93449AB4271E72CD0094AA60 /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
+		93449AB7271E72F10094AA60 /* Analyze - Two */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Analyze - Two";
+			sourceTree = "<group>";
+		};
+		93449AB8271E732E0094AA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93449AB9271E73390094AA60 /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
+		93449ABC271E73940094AA60 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				93449ABD271E740E0094AA60 /* File.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		93981BEB271E682000EB1003 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +224,8 @@
 				93981C0D271E682600EB1003 /* TreeFoodTests */,
 				93981C17271E682600EB1003 /* TreeFoodUITests */,
 				93981BF5271E682000EB1003 /* Products */,
+				4604814E860B95E01F2E5035 /* Pods */,
+				FDA33306DEB8FF44452F4E0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +242,13 @@
 		93981BF6271E682000EB1003 /* TreeFood */ = {
 			isa = PBXGroup;
 			children = (
+				93449ABC271E73940094AA60 /* Launch */,
+				93449AA7271E71C70094AA60 /* Add */,
+				93449AA6271E71540094AA60 /* Extension+Const */,
+				93449AA5271E71320094AA60 /* Analyze */,
+				93BE4801271E7025001ED671 /* Record */,
+				93BE4800271E701C001ED671 /* Mine */,
+				93BE47FF271E7013001ED671 /* Home */,
 				93981BF7271E682000EB1003 /* AppDelegate.swift */,
 				93981BF9271E682000EB1003 /* SceneDelegate.swift */,
 				93981BFB271E682000EB1003 /* ViewController.swift */,
@@ -127,6 +277,47 @@
 			path = TreeFoodUITests;
 			sourceTree = "<group>";
 		};
+		93BE47FF271E7013001ED671 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93449AAA271E72100094AA60 /* View - Cell */,
+				93449AA9271E72070094AA60 /* Model */,
+				93449AA8271E71ED0094AA60 /* Home - Two */,
+				93449AAB271E722F0094AA60 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		93BE4800271E701C001ED671 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				93449AAF271E72760094AA60 /* View - Cell */,
+				93449AAE271E72680094AA60 /* Model */,
+				93449AAD271E72570094AA60 /* Mine - Two */,
+				93449AB0271E729B0094AA60 /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		93BE4801271E7025001ED671 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				93449AB4271E72CD0094AA60 /* View - Cell */,
+				93449AB3271E72C00094AA60 /* Model */,
+				93449AB2271E72B50094AA60 /* Record - Two */,
+				93449AB5271E72E60094AA60 /* RecordViewController.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		FDA33306DEB8FF44452F4E0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5273B4DA82728CEB79516E72 /* Pods_TreeFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93981C1E271E682600EB1003 /* Build configuration list for PBXNativeTarget "TreeFood" */;
 			buildPhases = (
+				6C2CF1A3740F6A4968AEDDBA /* [CP] Check Pods Manifest.lock */,
 				93981BF0271E682000EB1003 /* Sources */,
 				93981BF1271E682000EB1003 /* Frameworks */,
 				93981BF2271E682000EB1003 /* Resources */,
+				0CF1ACC4FE6C0140B609AA40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +446,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF1ACC4FE6C0140B609AA40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreeFood/Pods-TreeFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreeFood/Pods-TreeFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreeFood/Pods-TreeFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C2CF1A3740F6A4968AEDDBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreeFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93981BF0271E682000EB1003 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */,
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
+				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
+				93449ABE271E740E0094AA60 /* File.swift in Sources */,
+				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
+				93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,11 +674,13 @@
 		};
 		93981C1F271E682600EB1003 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E249620CA0C60C818E7DBBD1 /* Pods-TreeFood.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20211019;
 				DEVELOPMENT_TEAM = J3HD9656AL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TreeFood/Info.plist;
@@ -451,22 +693,24 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Hut.TreeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		93981C20271E682600EB1003 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA3784D92CF15B6DDB5F620 /* Pods-TreeFood.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20211019;
 				DEVELOPMENT_TEAM = J3HD9656AL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TreeFood/Info.plist;
@@ -479,12 +723,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Hut.TreeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
