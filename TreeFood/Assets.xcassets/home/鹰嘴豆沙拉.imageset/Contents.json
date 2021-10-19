@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Snipaste_2020-09-18_20-54-29.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Snipaste_2020-09-18_20-54-29@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Snipaste_2020-09-18_20-54-29@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

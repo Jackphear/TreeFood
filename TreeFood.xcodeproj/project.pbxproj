@@ -12,7 +12,12 @@
 		93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB0271E729B0094AA60 /* MineViewController.swift */; };
 		93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB5271E72E60094AA60 /* RecordViewController.swift */; };
 		93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABA271E73630094AA60 /* AnalyzeViewController.swift */; };
-		93449ABE271E740E0094AA60 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABD271E740E0094AA60 /* File.swift */; };
+		93449ABE271E740E0094AA60 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABD271E740E0094AA60 /* Launch.swift */; };
+		93449AC3271EA1A00094AA60 /* BarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC2271EA1A00094AA60 /* BarContentView.swift */; };
+		93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC4271EA5FD0094AA60 /* Extension.swift */; };
+		93449AC7271EA61D0094AA60 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC6271EA61D0094AA60 /* Const.swift */; };
+		93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */; };
+		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
 		93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF7271E682000EB1003 /* AppDelegate.swift */; };
 		93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF9271E682000EB1003 /* SceneDelegate.swift */; };
 		93981BFC271E682000EB1003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BFB271E682000EB1003 /* ViewController.swift */; };
@@ -48,7 +53,12 @@
 		93449AB0271E729B0094AA60 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		93449AB5271E72E60094AA60 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		93449ABA271E73630094AA60 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
-		93449ABD271E740E0094AA60 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		93449ABD271E740E0094AA60 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		93449AC2271EA1A00094AA60 /* BarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarContentView.swift; sourceTree = "<group>"; };
+		93449AC4271EA5FD0094AA60 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		93449AC6271EA61D0094AA60 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		93981BF4271E682000EB1003 /* TreeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981BF7271E682000EB1003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93981BF9271E682000EB1003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +124,9 @@
 		93449AA6271E71540094AA60 /* Extension+Const */ = {
 			isa = PBXGroup;
 			children = (
+				93449AC4271EA5FD0094AA60 /* Extension.swift */,
+				93449AC6271EA61D0094AA60 /* Const.swift */,
+				93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */,
 			);
 			path = "Extension+Const";
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 		93449AA7271E71C70094AA60 /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				93449ACA271ED9720094AA60 /* AddView.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -212,7 +226,8 @@
 		93449ABC271E73940094AA60 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				93449ABD271E740E0094AA60 /* File.swift */,
+				93449ABD271E740E0094AA60 /* Launch.swift */,
+				93449AC2271EA1A00094AA60 /* BarContentView.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -242,20 +257,20 @@
 		93981BF6271E682000EB1003 /* TreeFood */ = {
 			isa = PBXGroup;
 			children = (
-				93449ABC271E73940094AA60 /* Launch */,
-				93449AA7271E71C70094AA60 /* Add */,
-				93449AA6271E71540094AA60 /* Extension+Const */,
-				93449AA5271E71320094AA60 /* Analyze */,
-				93BE4801271E7025001ED671 /* Record */,
-				93BE4800271E701C001ED671 /* Mine */,
-				93BE47FF271E7013001ED671 /* Home */,
+				93981C05271E682500EB1003 /* Info.plist */,
 				93981BF7271E682000EB1003 /* AppDelegate.swift */,
 				93981BF9271E682000EB1003 /* SceneDelegate.swift */,
 				93981BFB271E682000EB1003 /* ViewController.swift */,
-				93981BFD271E682000EB1003 /* Main.storyboard */,
 				93981C00271E682500EB1003 /* Assets.xcassets */,
+				93449AA7271E71C70094AA60 /* Add */,
+				93449AA5271E71320094AA60 /* Analyze */,
+				93449AA6271E71540094AA60 /* Extension+Const */,
+				93BE47FF271E7013001ED671 /* Home */,
+				93449ABC271E73940094AA60 /* Launch */,
 				93981C02271E682500EB1003 /* LaunchScreen.storyboard */,
-				93981C05271E682500EB1003 /* Info.plist */,
+				93981BFD271E682000EB1003 /* Main.storyboard */,
+				93BE4800271E701C001ED671 /* Mine */,
+				93BE4801271E7025001ED671 /* Record */,
 			);
 			path = TreeFood;
 			sourceTree = "<group>";
@@ -493,14 +508,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93449ACB271ED9720094AA60 /* AddView.swift in Sources */,
 				93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */,
+				93449AC3271EA1A00094AA60 /* BarContentView.swift in Sources */,
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
+				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
-				93449ABE271E740E0094AA60 /* File.swift in Sources */,
+				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
+				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
 				93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */,
+				93449AC7271EA61D0094AA60 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
