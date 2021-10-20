@@ -7,6 +7,7 @@
 
 import UIKit
 import ESTabBarController_swift
+import SnapKit
 
 
 class BarContentView: ESTabBarItemContentView {
@@ -22,10 +23,11 @@ class BarContentView: ESTabBarItemContentView {
         self.init(frame: frame)
         if postion == "left"{
             self.insets = UIEdgeInsets.init(top:20.fit, left: 0, bottom: 0, right: 20.fit)
-        }else{
+        }else if postion == "right"{
             self.insets = UIEdgeInsets.init(top:20.fit, left: 0, bottom: 0, right: -20.fit)
         }
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -46,5 +48,26 @@ class BarContentView: ESTabBarItemContentView {
         impliesAnimation.duration = 0.3 * 2
         impliesAnimation.calculationMode = CAAnimationCalculationMode.cubic
         imageView.layer.add(impliesAnimation, forKey: nil)
+    }
+}
+
+extension ESTabBar{
+    override open func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        if !isUserInteractionEnabled || isHidden || alpha <= 0.01 {
+            return nil
+        }
+        let resultView = super.hitTest(point, with: event)
+        if resultView != nil {
+            return resultView
+        }else{
+            for subView in subviews.reversed() {
+                let point = subView.convert(point, to: self)
+                let hitView = subView.hitTest(point, with: event)
+                if hitView != nil {
+                    return hitView
+                }
+            }
+        }
+        return nil
     }
 }

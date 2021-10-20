@@ -16,19 +16,20 @@ func Launch() -> ESTabBarController {
     let recordVC = RecordViewController()
     let mineVC = MineViewController()
     let analyzeVC = AnalyzeViewController()
-    
+    let addVC = UIViewController()
     
     
     homeVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "left"), title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
     recordVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "left"), title: "", image: UIImage(named: "recoder"), selectedImage: UIImage(named: "recoder"))
     mineVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(named: "mine"), selectedImage: UIImage(named: "mine"))
     analyzeVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(named: "archive"), selectedImage: UIImage(named: "archive"))
+    addVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(named: "menu_plus"), selectedImage: UIImage(named: "menu_plus"))
     
     let homeNavi = BaseNavigationController(rootViewController: homeVC)
     let recordNavi = BaseNavigationController(rootViewController: recordVC)
     let mineNavi = BaseNavigationController(rootViewController: mineVC)
     let analyzeNavi = BaseNavigationController(rootViewController: analyzeVC)
-    tabBarController.viewControllers = [homeNavi, recordNavi, mineNavi, analyzeNavi]
+    tabBarController.viewControllers = [homeNavi, recordNavi, addVC, mineNavi, analyzeNavi]
     
     UITabBar.appearance().isTranslucent = false
     UITabBar.appearance().tintColor = .white

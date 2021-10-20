@@ -768,12 +768,12 @@
 		281C533A5A3814EF58A62901B9A7EB96 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
 		28312CE4368391589EB28B1519F38CAE /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Source/model/draw/Pattern.swift; sourceTree = "<group>"; };
 		29C2D80F473047FF9779E3D00AC51F45 /* LookinAppInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAppInfo.m; path = Src/Shared/LookinAppInfo.m; sourceTree = "<group>"; };
-		2A6758B6D7ABD5A451AB05B0B38FA0FA /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		2A6758B6D7ABD5A451AB05B0B38FA0FA /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
 		2AAA4BFE31FDB897633ACBD904E1F8FF /* BuiltInBasicType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuiltInBasicType.swift; path = Source/BuiltInBasicType.swift; sourceTree = "<group>"; };
 		2AFAFC078025173327BF4C75B8C77513 /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = DNSPageView/Helper.swift; sourceTree = "<group>"; };
 		2B35EE4E1B73A4E78C2522A27646D92D /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
 		2B78F37CFC37A3F4FB5D263348CC472C /* LookinDashboardBlueprint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinDashboardBlueprint.m; path = Src/Shared/LookinDashboardBlueprint.m; sourceTree = "<group>"; };
-		2D7554E9AB77D3DD1D3F857587A50CA2 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		2D7554E9AB77D3DD1D3F857587A50CA2 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
 		2E0E45319CC7892C1BB5778BE39C1E55 /* PointerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PointerType.swift; path = Source/PointerType.swift; sourceTree = "<group>"; };
 		2E4F9008A51DECEDB779E36532733920 /* ShapeAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimationGenerator.swift; path = Source/animation/types/animation_generators/ShapeAnimationGenerator.swift; sourceTree = "<group>"; };
 		2E705453424F47AE70EC7D9AAD8AFD7C /* MDisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink.swift; path = Source/platform/MDisplayLink.swift; sourceTree = "<group>"; };
@@ -785,9 +785,9 @@
 		3042FCAED120D246C8FD910E3C3A4E16 /* DNSPageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DNSPageView-dummy.m"; sourceTree = "<group>"; };
 		308C5A9AD8EDC011B510C5170422FB88 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
 		30922D1714591F90F22425E726719A12 /* PTPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPrivate.h; path = Src/Shared/Peertalk/PTPrivate.h; sourceTree = "<group>"; };
-		30D43D20442721B52EA598AC38785AE8 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		30D43D20442721B52EA598AC38785AE8 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
 		3110E00FF030EA607C5D8429EC60C712 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Source/TransformOf.swift; sourceTree = "<group>"; };
-		3223F5881E16BFBAEBFF66818BAE7B9F /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		3223F5881E16BFBAEBFF66818BAE7B9F /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
 		3357FA426DC8695A20DFF6057D396018 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		33DAB2346C653373C125D37435A5E1CA /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
 		33ECD7D4D38FD140333940163F8A1D31 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
@@ -829,7 +829,7 @@
 		4150A9C2D98EF972C257CF8BB1D23206 /* NSArray+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Lookin.m"; path = "Src/Shared/Category/NSArray+Lookin.m"; sourceTree = "<group>"; };
 		419F1F829946A33633896A0E7BDF567C /* PageViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewManager.swift; path = DNSPageView/PageViewManager.swift; sourceTree = "<group>"; };
 		41C334FD3830DEDE7BF7B0ED26287820 /* AssociatedKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedKeys.swift; path = EachNavigationBar/Classes/AssociatedKeys.swift; sourceTree = "<group>"; };
-		41E45DDA688CB3FE501F1939623180C8 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		41E45DDA688CB3FE501F1939623180C8 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
 		41F03505FB8954AF98723AB384372CBF /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		4297F29D895FD6298A7038393ABFF814 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
 		42E732E2A537BCBEDE0DFCA4FE81BDB0 /* EachNavigationBar.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = EachNavigationBar.xcassets; path = EachNavigationBar/Assets/EachNavigationBar.xcassets; sourceTree = "<group>"; };
@@ -888,7 +888,7 @@
 		52DD02155A61846CD62FF3B7ADB38E78 /* LookinAttrIdentifiers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttrIdentifiers.h; path = Src/Shared/LookinAttrIdentifiers.h; sourceTree = "<group>"; };
 		5321328455D101158E24A81C577C8319 /* Macaw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Macaw.modulemap; sourceTree = "<group>"; };
 		5478EF4FD9FEBD2657B02AB960362531 /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
-		54DFEF959A1C2FCFE9BD5611A29B4FC9 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		54DFEF959A1C2FCFE9BD5611A29B4FC9 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
 		55399AF82A458A3DD37DD0A172398452 /* DKCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DKCamera.modulemap; sourceTree = "<group>"; };
 		55529FCA9777D591A1184BA313D6D6A0 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
 		55E1EE91863E6050A7B4B44BAE532923 /* LKS_PerspectiveManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveManager.h; path = Src/Server/Perspective/LKS_PerspectiveManager.h; sourceTree = "<group>"; };
@@ -906,7 +906,7 @@
 		59B9632B1F875F7A360B599F467B70AB /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
 		5A28164E47FF67811537124EAF8D0477 /* PTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTChannel.h; path = Src/Shared/Peertalk/PTChannel.h; sourceTree = "<group>"; };
 		5A67BC433B050C666671A5AEC713CFDC /* TouchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchEvent.swift; path = Source/events/TouchEvent.swift; sourceTree = "<group>"; };
-		5A6B91356A5D252A7D3F8ABCCE77F64B /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		5A6B91356A5D252A7D3F8ABCCE77F64B /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
 		5B73EADAFF5C7995DB1D0898479EE99C /* ContextDescriptorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextDescriptorType.swift; path = Source/ContextDescriptorType.swift; sourceTree = "<group>"; };
 		5D4E93FE226B0E164EFB4AE6490F5392 /* SVGConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGConstants.swift; path = Source/svg/SVGConstants.swift; sourceTree = "<group>"; };
 		5DC32AB38662E970EAE67D1949A6E6DD /* LookinCodingValueType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinCodingValueType.h; path = Src/Shared/LookinCodingValueType.h; sourceTree = "<group>"; };
@@ -1014,7 +1014,7 @@
 		89D3AD0C4592AA4D169A7914CE710382 /* LookinMsgAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinMsgAttribute.h; path = Src/Shared/Message/LookinMsgAttribute.h; sourceTree = "<group>"; };
 		8A34472DD41EFD7CA700A0B09B9B0062 /* AnimOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimOperators.swift; path = Source/animation/layer_animation/Extensions/AnimOperators.swift; sourceTree = "<group>"; };
 		8ABCA2B7C2E1666838512A1F5B3D0443 /* DKCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-umbrella.h"; sourceTree = "<group>"; };
-		8CB6B60E63181676ACBA24B59E8A81E1 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		8CB6B60E63181676ACBA24B59E8A81E1 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
 		8D05CD24EC1EC846AB3BBC8F477707AE /* FanMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FanMenu; path = FanMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4FBB7DDCE4F7E9632C5DFAB2AB7D1B /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
 		8D6477761E079F1EA7418293CD4EDBCB /* LookinAttributesGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAttributesGroup.m; path = Src/Shared/LookinAttributesGroup.m; sourceTree = "<group>"; };
@@ -1067,7 +1067,7 @@
 		9C5DFE96CB4DAE43018DDBA535987092 /* Stop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Source/model/draw/Stop.swift; sourceTree = "<group>"; };
 		9C81A3D9A65D1EA4D52598F8F5953495 /* PathBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBuilder.swift; path = Source/model/geom2d/PathBuilder.swift; sourceTree = "<group>"; };
 		9CC23E4EAF651554DD74A5697393F8A2 /* EachNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EachNavigationBar-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA6F2FBDD636FE18C5FB9BC75CD3044 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
 		9DE1B01936748FE474CF932E0F2C3C23 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		9E2CF434783300B33991564A90E91596 /* DescriptionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DescriptionExtensions.swift; path = Source/utils/DescriptionExtensions.swift; sourceTree = "<group>"; };
@@ -1081,7 +1081,7 @@
 		A069DBF9BE0B4722020C6F8DEC9DD5FD /* LKS_PerspectiveManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveManager.m; path = Src/Server/Perspective/LKS_PerspectiveManager.m; sourceTree = "<group>"; };
 		A06E0C3475310216C4B33DBB95F9647A /* GroupDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupDisposable.swift; path = Source/bindings/GroupDisposable.swift; sourceTree = "<group>"; };
 		A073024CE5FDF6CD8E2C43D558F52EC2 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		A0D55B869CF89AA2BF7E6FB8F0B81030 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		A0D55B869CF89AA2BF7E6FB8F0B81030 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
 		A10DAAEBA335256BD958E056A3AB14C3 /* LineJoin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineJoin.swift; path = Source/model/draw/LineJoin.swift; sourceTree = "<group>"; };
 		A224BA2445B8CBA904AF4A76BF37D7C3 /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Source/model/geom2d/Circle.swift; sourceTree = "<group>"; };
 		A22B87DD19DDC74CBA37D9CF087B9C88 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
@@ -1097,8 +1097,8 @@
 		A676315335FBDE0084ED71B538B2EE78 /* SVGCanvas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGCanvas.swift; path = Source/svg/SVGCanvas.swift; sourceTree = "<group>"; };
 		A6B3019E25997CAC575BE84DB070F6A1 /* MCAShapeLayerLineJoin_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineJoin_iOS.swift; path = Source/MCAShapeLayerLineJoin_iOS.swift; sourceTree = "<group>"; };
 		A6C80288D4E55E535048073A3CBD5AF7 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		A6CFA194335B2D0796E22042CE7AB476 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
-		A7672EEB3D6A26B296C7AB58A4C3EF4A /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		A6CFA194335B2D0796E22042CE7AB476 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		A7672EEB3D6A26B296C7AB58A4C3EF4A /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
 		A8A33AB176E79A46E6813575A06E9F3A /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Source/model/scene/Node.swift; sourceTree = "<group>"; };
 		A924A91C479EF94B7AD364C4EF1C5F63 /* Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Navigation.swift; path = EachNavigationBar/Classes/Navigation.swift; sourceTree = "<group>"; };
 		A92E231F659A00833CF85FD0B7F434AC /* Transformable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformable.swift; path = Source/Transformable.swift; sourceTree = "<group>"; };
@@ -1153,10 +1153,10 @@
 		C046CC9922F380A60AF066487CF9CC6C /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
 		C0B0D9C260437539C89456B8F0970A87 /* LookinHierarchyFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinHierarchyFile.m; path = Src/Shared/LookinHierarchyFile.m; sourceTree = "<group>"; };
 		C233CE71D43E61EB7AC56A41CAAE15B8 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		C2B1FF4031CD3B65EFD59DBB2E41947B /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		C2B1FF4031CD3B65EFD59DBB2E41947B /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
 		C2B9B3A2D83BC31CD7DC442DEAB4E8EC /* LKS_PerspectiveHierarchyView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveHierarchyView.h; path = Src/Server/Perspective/LKS_PerspectiveHierarchyView.h; sourceTree = "<group>"; };
 		C2C63BC44C75C4CE538F72F4FE798770 /* NSString+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Lookin.m"; path = "Src/Shared/Category/NSString+Lookin.m"; sourceTree = "<group>"; };
-		C2D1FDC97D87720A7FE50407503AF59C /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		C2D1FDC97D87720A7FE50407503AF59C /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
 		C341AFDFC89EE3E3934AA64F6303D1B5 /* PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTProtocol.m; path = Src/Shared/Peertalk/PTProtocol.m; sourceTree = "<group>"; };
 		C38147B11F7F1F2C0FFA78D088BDD604 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
 		C387806CE1F7FC814E9EE915DD03EEF9 /* Macaw */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Macaw; path = Macaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1174,12 +1174,12 @@
 		C980ABC027AF376BBAC3350007F071A0 /* LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinServer.h; path = Src/Server/LookinServer.h; sourceTree = "<group>"; };
 		CA033A3D1AF6D02A993B8BCEE298B0C4 /* DKCamera */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DKCamera; path = DKCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA91CFCAACFEBE33F67DA1CC59CC1EF1 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		CAB675F0ADA42F0522C90A936B4BFE31 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		CAB675F0ADA42F0522C90A936B4BFE31 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		CB1B3647AB61FB596C6288C1C1827E17 /* Macaw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Macaw-dummy.m"; sourceTree = "<group>"; };
 		CBD6DBCF14F6E83516C77A6EF147306D /* Graphics_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics_macOS.swift; path = Source/platform/macOS/Graphics_macOS.swift; sourceTree = "<group>"; };
 		CCC6A1991E0A8503CAFC0939A5793348 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		CD54121DDA84872534168702B5F92950 /* HandyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandyJSON; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD8AB6FFDACC95A2C63E244DB54324A8 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		CD8AB6FFDACC95A2C63E244DB54324A8 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		CF80B2FB1D536A6349232CE29DFC667D /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
 		CF89FD3D626394B2657AED4BE17AB75C /* UITextView+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+LookinServer.h"; path = "Src/Server/Category/UITextView+LookinServer.h"; sourceTree = "<group>"; };
 		CFEB6750106F8D58701AC41D55DD0638 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
@@ -1204,7 +1204,7 @@
 		DCFE12805443A2FA235D3020493F47A7 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		DD7D4D82A060DC00F09A9D13A6C4C451 /* LookinWeakContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinWeakContainer.h; path = Src/Shared/LookinWeakContainer.h; sourceTree = "<group>"; };
 		DDBAE31C3FFBA371FCA17A2C29A77CC5 /* RoundRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundRect.swift; path = Source/model/geom2d/RoundRect.swift; sourceTree = "<group>"; };
-		DDCA9BF583232720E1F4D11EEDB67771 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		DDCA9BF583232720E1F4D11EEDB67771 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
 		DEFB9AFF805E341EE75F0EFCBEC9F621 /* ESTabBarController-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ESTabBarController-swift.release.xcconfig"; sourceTree = "<group>"; };
 		DF090131D2871FFDCE8138E3C8BAE132 /* DKCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-prefix.pch"; sourceTree = "<group>"; };
 		DF188FCE9CE3965C4C60C2621307B2B1 /* UIColor+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LookinServer.m"; path = "Src/Server/Category/UIColor+LookinServer.m"; sourceTree = "<group>"; };
@@ -1221,7 +1221,7 @@
 		E3A0B1BB510E4FCB67F7407B210E679B /* DKCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DKCamera-Info.plist"; sourceTree = "<group>"; };
 		E3EE2FFF69B454A64325AE47D56F189F /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
 		E455DF30F31539023BD3FA599A104C90 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Source/model/geom2d/Point.swift; sourceTree = "<group>"; };
-		E5A5F7F89E6099963359C56D5A21F61C /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Sources/en.lproj; sourceTree = "<group>"; };
+		E5A5F7F89E6099963359C56D5A21F61C /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Sources/en.lproj; sourceTree = "<group>"; };
 		E63D0457B68E5310110FBAAB171357A1 /* EachNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EachNavigationBar-umbrella.h"; sourceTree = "<group>"; };
 		E68B478FE6A5BA6F4E66FFA57703AA28 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		E835CE4A5A3F37EE766A2BD8610BFB02 /* LookinServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LookinServer.release.xcconfig; sourceTree = "<group>"; };
@@ -1253,7 +1253,7 @@
 		F043C14B99478AE0743FCE266A1D0C0D /* LookinAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttribute.h; path = Src/Shared/LookinAttribute.h; sourceTree = "<group>"; };
 		F05910C7A2F54C9A29306182744D4BEB /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawable.swift; path = Source/model/draw/Drawable.swift; sourceTree = "<group>"; };
 		F0709D9A280D9DD02A788B17C6CA6F37 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Source/DateTransform.swift; sourceTree = "<group>"; };
-		F091FD6EB140D23B2B3EEEF964CD867D /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		F091FD6EB140D23B2B3EEEF964CD867D /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
 		F0D2D3C2FBA330F176AE8E4604DBAC5E /* Interpolable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolable.swift; path = Source/animation/layer_animation/Extensions/Interpolable.swift; sourceTree = "<group>"; };
 		F1419DC2DBBC729313A016AD283A3B18 /* LocusInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocusInterpolation.swift; path = Source/animation/layer_animation/Extensions/LocusInterpolation.swift; sourceTree = "<group>"; };
 		F15961071C6A996D7878D14D6EBCE55B /* MView_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MView_iOS.swift; path = Source/platform/iOS/MView_iOS.swift; sourceTree = "<group>"; };
@@ -1476,7 +1476,6 @@
 				5FB102A3E252B87A0888930DE3F2D900 /* UILayoutSupport+Extensions.swift */,
 				6E16A767C6AF01FFC635583FC68580D8 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1508,7 +1507,6 @@
 				FC16BF32022A96780D208722D5E3A355 /* SwiftyJSON.swift */,
 				BF64C236FE124124D6FADC695E639643 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -1520,7 +1518,6 @@
 				3E977D68745ABFB2DF8C0B4715C60F50 /* XMLIndexer+XMLIndexerDeserializable.swift */,
 				89146E3DB612AFD62F97FD7BFD3626CE /* Support Files */,
 			);
-			name = SWXMLHash;
 			path = SWXMLHash;
 			sourceTree = "<group>";
 		};
@@ -1732,7 +1729,6 @@
 				AD9EFB9F8732CD3C5C10037A5EC29EB0 /* UIVisualEffectView+LookinServer.m */,
 				7301C9070BF62CB746EBE69EE49F1127 /* Support Files */,
 			);
-			name = LookinServer;
 			path = LookinServer;
 			sourceTree = "<group>";
 		};
@@ -1772,7 +1768,6 @@
 				C046CC9922F380A60AF066487CF9CC6C /* FSCalendarWeekdayView.m */,
 				F68F604DFD99FC1348365A3377A8823D /* Support Files */,
 			);
-			name = FSCalendar;
 			path = FSCalendar;
 			sourceTree = "<group>";
 		};
@@ -1817,7 +1812,6 @@
 				37AE8850BB7515F779EA410DD15ACAE3 /* URLTransform.swift */,
 				B5C948093D8EB8C9D000286D70D0F956 /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -1891,7 +1885,6 @@
 				419F1F829946A33633896A0E7BDF567C /* PageViewManager.swift */,
 				081D4156B24A479678AF8FE303A97404 /* Support Files */,
 			);
-			name = DNSPageView;
 			path = DNSPageView;
 			sourceTree = "<group>";
 		};
@@ -1931,7 +1924,6 @@
 				A3C0CAFDED93E567067416CD6DF7E10F /* Resources */,
 				144910FC9736D39D9812D40D4C7834B0 /* Support Files */,
 			);
-			name = EachNavigationBar;
 			path = EachNavigationBar;
 			sourceTree = "<group>";
 		};
@@ -2058,7 +2050,6 @@
 				6ACFA3579A96DD35D6846FFE1CD6EA66 /* Puya */,
 				67F627E821C099F69E491C1F696B003F /* Support Files */,
 			);
-			name = CHIPageControl;
 			path = CHIPageControl;
 			sourceTree = "<group>";
 		};
@@ -2094,7 +2085,6 @@
 				C89AD94027A12D11EF137A5A1DAB359B /* Resources */,
 				E4E36E42DF399F553A8F14714A61EBA0 /* Support Files */,
 			);
-			name = DKCamera;
 			path = DKCamera;
 			sourceTree = "<group>";
 		};
@@ -2167,7 +2157,6 @@
 				EBD87866FCA6D6B5E3A10B311F4A887D /* Resources */,
 				86D2DCF1D5BE99E0F820AF10D5DC9AF4 /* Support Files */,
 			);
-			name = "ESTabBarController-swift";
 			path = "ESTabBarController-swift";
 			sourceTree = "<group>";
 		};
@@ -2224,7 +2213,6 @@
 				FDA57D89AA36346E507764EF846C2823 /* FanMenu.swift */,
 				9B3D0D4C0CB97879530B4FC3B8734C7A /* Support Files */,
 			);
-			name = FanMenu;
 			path = FanMenu;
 			sourceTree = "<group>";
 		};
@@ -2388,7 +2376,6 @@
 				0B972A8BAAC7C4799C918E96C83ED607 /* Variable.swift */,
 				C81CF4B2636390EA8EE10FDC5B898B4C /* Support Files */,
 			);
-			name = Macaw;
 			path = Macaw;
 			sourceTree = "<group>";
 		};
@@ -2449,7 +2436,6 @@
 				B976C97C81BF6229925D19F6EF064122 /* UnitBezier.h */,
 				A76C6300EE5E4ADA0F6200A35CFE3BB8 /* Support Files */,
 			);
-			name = pop;
 			path = pop;
 			sourceTree = "<group>";
 		};

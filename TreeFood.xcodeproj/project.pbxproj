@@ -27,6 +27,15 @@
 		93981C0F271E682600EB1003 /* TreeFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C0E271E682600EB1003 /* TreeFoodTests.swift */; };
 		93981C19271E682600EB1003 /* TreeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C18271E682600EB1003 /* TreeFoodUITests.swift */; };
 		93981C1B271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */; };
+		93E543E8271FD90F00E6DE66 /* record.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E5271FD90F00E6DE66 /* record.json */; };
+		93E543E9271FD90F00E6DE66 /* homelist.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E6271FD90F00E6DE66 /* homelist.json */; };
+		93E543EA271FD90F00E6DE66 /* add.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E7271FD90F00E6DE66 /* add.json */; };
+		93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543EB271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift */; };
+		93E543EE271FECDC00E6DE66 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543ED271FECDC00E6DE66 /* SearchCollectionViewCell.swift */; };
+		93E543F0271FECF000E6DE66 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543EF271FECF000E6DE66 /* RecommendCollectionViewCell.swift */; };
+		93E543F2271FED1000E6DE66 /* SupplementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543F1271FED1000E6DE66 /* SupplementCollectionViewCell.swift */; };
+		93E543F4271FED1F00E6DE66 /* SuggestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543F3271FED1F00E6DE66 /* SuggestCollectionViewCell.swift */; };
+		93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543F5271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +81,15 @@
 		93981C14271E682600EB1003 /* TreeFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981C18271E682600EB1003 /* TreeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITests.swift; sourceTree = "<group>"; };
 		93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93E543E5271FD90F00E6DE66 /* record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record.json; sourceTree = "<group>"; };
+		93E543E6271FD90F00E6DE66 /* homelist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homelist.json; sourceTree = "<group>"; };
+		93E543E7271FD90F00E6DE66 /* add.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add.json; sourceTree = "<group>"; };
+		93E543EB271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		93E543ED271FECDC00E6DE66 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		93E543EF271FECF000E6DE66 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		93E543F1271FED1000E6DE66 /* SupplementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementCollectionViewCell.swift; sourceTree = "<group>"; };
+		93E543F3271FED1F00E6DE66 /* SuggestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestCollectionViewCell.swift; sourceTree = "<group>"; };
+		93E543F5271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceCollectionViewCell.swift; sourceTree = "<group>"; };
 		E249620CA0C60C818E7DBBD1 /* Pods-TreeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeFood.debug.xcconfig"; path = "Target Support Files/Pods-TreeFood/Pods-TreeFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +174,12 @@
 		93449AAA271E72100094AA60 /* View - Cell */ = {
 			isa = PBXGroup;
 			children = (
+				93E543EB271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift */,
+				93E543ED271FECDC00E6DE66 /* SearchCollectionViewCell.swift */,
+				93E543EF271FECF000E6DE66 /* RecommendCollectionViewCell.swift */,
+				93E543F1271FED1000E6DE66 /* SupplementCollectionViewCell.swift */,
+				93E543F3271FED1F00E6DE66 /* SuggestCollectionViewCell.swift */,
+				93E543F5271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift */,
 			);
 			path = "View - Cell";
 			sourceTree = "<group>";
@@ -257,6 +281,7 @@
 		93981BF6271E682000EB1003 /* TreeFood */ = {
 			isa = PBXGroup;
 			children = (
+				93E543E4271FD8CF00E6DE66 /* Data */,
 				93981C05271E682500EB1003 /* Info.plist */,
 				93981BF7271E682000EB1003 /* AppDelegate.swift */,
 				93981BF9271E682000EB1003 /* SceneDelegate.swift */,
@@ -323,6 +348,16 @@
 				93449AB5271E72E60094AA60 /* RecordViewController.swift */,
 			);
 			path = Record;
+			sourceTree = "<group>";
+		};
+		93E543E4271FD8CF00E6DE66 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				93E543E7271FD90F00E6DE66 /* add.json */,
+				93E543E6271FD90F00E6DE66 /* homelist.json */,
+				93E543E5271FD90F00E6DE66 /* record.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		FDA33306DEB8FF44452F4E0E /* Frameworks */ = {
@@ -442,6 +477,9 @@
 				93981C04271E682500EB1003 /* LaunchScreen.storyboard in Resources */,
 				93981C01271E682500EB1003 /* Assets.xcassets in Resources */,
 				93981BFF271E682000EB1003 /* Main.storyboard in Resources */,
+				93E543E9271FD90F00E6DE66 /* homelist.json in Resources */,
+				93E543E8271FD90F00E6DE66 /* record.json in Resources */,
+				93E543EA271FD90F00E6DE66 /* add.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,17 +548,23 @@
 			files = (
 				93449ACB271ED9720094AA60 /* AddView.swift in Sources */,
 				93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */,
+				93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */,
 				93449AC3271EA1A00094AA60 /* BarContentView.swift in Sources */,
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
+				93E543F0271FECF000E6DE66 /* RecommendCollectionViewCell.swift in Sources */,
 				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
 				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
+				93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
 				93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */,
 				93449AC7271EA61D0094AA60 /* Const.swift in Sources */,
+				93E543F2271FED1000E6DE66 /* SupplementCollectionViewCell.swift in Sources */,
+				93E543EE271FECDC00E6DE66 /* SearchCollectionViewCell.swift in Sources */,
+				93E543F4271FED1F00E6DE66 /* SuggestCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +677,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -687,6 +732,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -717,6 +763,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Hut.TreeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_BATCH_MODE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -747,6 +794,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Hut.TreeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_BATCH_MODE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

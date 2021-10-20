@@ -1,0 +1,315 @@
+{
+    "code": 200,
+    "data": {
+        "eats": [
+            {
+                "categoryName": "早餐",
+                "content": [
+                    {
+                        "image": "鳕鱼",
+                        "name": "鳕鱼",
+                        "dosage": "680g",
+                        "calorisNumber": 200
+                    },
+                    {
+                        "image": "甜椒",
+                        "name": "甜椒",
+                        "dosage": "3个",
+                        "calorisNumber": 69
+                    },
+                    {
+                        "image": "煮鸡蛋",
+                        "name": "煮鸡蛋",
+                        "dosage": "60g",
+                        "calorisNumber": 93
+                    },
+                    {
+                        "image": "煮白米饭",
+                        "name": "煮白米饭",
+                        "dosage": "158g",
+                        "calorisNumber": 94
+                    },
+                    {
+                        "image": "咖啡",
+                        "name": "咖啡",
+                        "dosage": "237g",
+                        "calorisNumber": 2
+                    },
+                    {
+                        "image": "橘子",
+                        "name": "橘子",
+                        "dosage": "76g",
+                        "calorisNumber": 40
+                    },
+                    {
+                        "image": "苹果",
+                        "name": "苹果",
+                        "dosage": "125g",
+                        "calorisNumber": 65
+                    },
+                    {
+                        "image": "浓咖啡",
+                        "name": "浓咖啡",
+                        "dosage": "300ml",
+                        "calorisNumber": 27
+                    },
+                    {
+                        "image": "煮玉米",
+                        "name": "煮玉米",
+                        "dosage": "103g",
+                        "calorisNumber": 99
+                    },
+                    {
+                        "image": "豆腐",
+                        "name": "豆腐",
+                        "dosage": "100g",
+                        "calorisNumber": 57
+                    },
+                    {
+                        "image": "燕麦片",
+                        "name": "燕麦片",
+                        "dosage": "80g",
+                        "calorisNumber": 304
+                    },
+                    {
+                        "image": "安慕希",
+                        "name": "安慕希",
+                        "dosage": "205g",
+                        "calorisNumber": 182
+                    },
+                    {
+                        "image": "炸鸡腿",
+                        "name": "炸鸡腿",
+                        "dosage": "158g",
+                        "calorisNumber": 431
+                    },
+                ]
+            },
+            {
+                "categoryName": "午餐",
+                "content": [
+                    {
+                        "image": "蒸白米饭",
+                        "name": "蒸白米饭",
+                        "dosage": "158",
+                        "calorisNumber": 205
+                    },
+                    {
+                        "image": "白切鸡",
+                        "name": "白切鸡",
+                        "dosage": "80g",
+                        "calorisNumber": 150
+                    },
+                    {
+                        "image": "蛋炒饭",
+                        "name": "蛋炒饭",
+                        "dosage": "150g",
+                        "calorisNumber": 231
+                    },
+                    {
+                        "image": "燕麦片",
+                        "name": "燕麦片",
+                        "dosage": "80g",
+                        "calorisNumber": 304
+                    },
+                    {
+                        "image": "汉堡包",
+                        "name": "汉堡包",
+                        "dosage": "110g",
+                        "calorisNumber": 279
+                    },
+                    {
+                        "image": "脱脂奶粉",
+                        "name": "脱脂奶粉",
+                        "dosage": "32g",
+                        "calorisNumber": 117
+                    },
+                    {
+                        "image": "巧克力饼干",
+                        "name": "巧克力饼干",
+                        "dosage": "8g",
+                        "calorisNumber": 16
+                    },
+                    {
+                        "image": "香梨",
+                        "name": "香梨",
+                        "dosage": "200g",
+                        "calorisNumber": 102
+                    },
+                    {
+                        "image": "吞拿鱼罐头",
+                        "name": "吞拿鱼罐头",
+                        "dosage": "10g",
+                        "calorisNumber": 11
+                    },
+                    {
+                        "image": "豆腐皮",
+                        "name": "豆腐皮",
+                        "dosage": "100g",
+                        "calorisNumber": 409
+                    },
+                    {
+                        "image": "煮大白菜",
+                        "name": "煮大白菜",
+                        "dosage": "119g",
+                        "calorisNumber": 17
+                    },
+                    {
+                        "image": "巴旦木",
+                        "name": "巴旦木",
+                        "dosage": "50g",
+                        "calorisNumber": 268
+                    }
+                ]
+            },
+            {
+                "categoryName": "晚餐",
+                "content": [
+                    {
+                        "image": "煮白米饭",
+                        "name": "煮白米饭",
+                        "dosage": "158g",
+                        "calorisNumber": 205
+                    },
+                    {
+                        "image": "煮鸡蛋",
+                        "name": "煮鸡蛋",
+                        "dosage": "60g",
+                        "calorisNumber": 93
+                    },
+                    {
+                        "image": "煮玉米",
+                        "name": "煮玉米",
+                        "dosage": "103g",
+                        "calorisNumber": 99
+                    },
+                    {
+                        "image": "烤鸡肉",
+                        "name": "烤鸡肉",
+                        "dosage": "178g",
+                        "calorisNumber": 425
+                    },
+                    {
+                        "image": "清炒油麦菜",
+                        "name": "清炒油麦菜",
+                        "dosage": "100g",
+                        "calorisNumber": 58
+                    },
+                    {
+                        "image": "煮胡萝卜",
+                        "name": "煮胡萝卜",
+                        "dosage": "156",
+                        "calorisNumber": 55
+                    },
+                    {
+                        "image": "香蕉",
+                        "name": "香蕉",
+                        "dosage": "150g",
+                        "calorisNumber": 134
+                    },
+                    {
+                        "image": "清蒸鱼",
+                        "name": "清蒸鱼",
+                        "dosage": "150g",
+                        "calorisNumber": 158
+                    },
+                    {
+                        "image": "肉夹馍",
+                        "name": "肉夹馍",
+                        "dosage": "200g",
+                        "calorisNumber": 455
+                    },
+                    {
+                        "image": "安慕希",
+                        "name": "安慕希",
+                        "dosage": "205g",
+                        "calorisNumber": 182
+                    },
+                    {
+                        "image": "巴旦木",
+                        "name": "巴旦木",
+                        "dosage": "50g",
+                        "calorisNumber": 200282
+                    },
+                    {
+                        "image": "猪柳蛋麦满分",
+                        "name": "猪柳蛋麦满分",
+                        "dosage": "100g",
+                        "calorisNumber": 376
+                    }
+                ]
+            },
+            {
+                "categoryName": "小食",
+                "content": [
+                    {
+                        "image": "橘子",
+                        "name": "橘子",
+                        "dosage": "75g",
+                        "calorisNumber": 40
+                    },
+                    {
+                        "image": "苹果",
+                        "name": "苹果",
+                        "dosage": "125g",
+                        "calorisNumber": 65
+                    },
+                    {
+                        "image": "香梨",
+                        "name": "香梨",
+                        "dosage": "200g",
+                        "calorisNumber": 102
+                    },
+                    {
+                        "image": "清蒸鱼",
+                        "name": "清蒸鱼",
+                        "dosage": "150g",
+                        "calorisNumber": 158
+                    },
+                    {
+                        "image": "豆腐皮",
+                        "name": "豆腐皮",
+                        "dosage": "100g",
+                        "calorisNumber": 409
+                    },
+                    {
+                        "image": "天然海草",
+                        "name": "天然海草",
+                        "dosage": "30g",
+                        "calorisNumber": 24
+                    },
+                    {
+                        "image": "黑咖啡",
+                        "name": "黑咖啡",
+                        "dosage": "2g",
+                        "calorisNumber": 0
+                    },
+                    {
+                        "image": "西蓝花",
+                        "name": "西蓝花",
+                        "dosage": "50g",
+                        "calorisNumber": 18
+                    },
+                    {
+                        "image": "脱脂牛奶",
+                        "name": "脱脂牛奶",
+                        "dosage": "250",
+                        "calorisNumber": 83
+                    },
+                    {
+                        "image": "煮玉米",
+                        "name": "煮玉米",
+                        "dosage": "103g",
+                        "calorisNumber": 99
+                    },
+                    {
+                        "image": "米饭",
+                        "name": "米饭",
+                        "dosage": "100g",
+                        "calorisNumber": 69
+                    }
+                ]
+            }
+        ]
+    }
+}
