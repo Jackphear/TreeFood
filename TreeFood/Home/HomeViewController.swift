@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //cellAnimation()
-        self.collectionView.cellAnimation(animationTime: 2, interval: 0.1)
+        //self.collectionView.cellAnimation(animationTime: 2, interval: 0.1)
     }
     // MARK: - 控件
 
@@ -99,21 +99,33 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCellID, for: indexPath) as! SearchCollectionViewCell
+            cell.backgroundColor = .black
+            cellAnimation(cell: cell, interval: 1)
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCellID, for: indexPath) as! RecommendCollectionViewCell
+            cell.backgroundColor = .black
+            cellAnimation(cell: cell, interval: 1)
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SupplementCellID, for: indexPath) as! SupplementCollectionViewCell
+            cell.backgroundColor = .black
+            cellAnimation(cell: cell, interval: 1)
             return cell
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SuggesttCellID, for: indexPath) as! SuggestCollectionViewCell
+            cell.backgroundColor = .black
+            cellAnimation(cell: cell, interval: 1)
             return cell
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PreferenceCellID, for: indexPath) as! PreferenceCollectionViewCell
+            cell.backgroundColor = .black
+            cellAnimation(cell: cell, interval: 1)
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PreferenceCellID, for: indexPath) as! PreferenceCollectionViewCell
+            cell.backgroundColor = .black
+            cellAnimation(cell: cell, interval: 1)
             return cell
         }
     }
@@ -163,29 +175,21 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 }
 
 //MARK: - to do
-extension UICollectionView{
-    func cellAnimation(animationTime:TimeInterval, interval:TimeInterval){
-        let array = self.numberOfSections
-        for i in 0...(array - 1){
-            //let path = array[i]
-            let cell = self.visibleCells[i]
-            cell.isHidden = true
-            let originPoint : CGPoint = cell.center
-            cell.center = CGPoint(x: -cell.frame.size.width,  y: originPoint.y)
-            UIView.animate(withDuration: animationTime + TimeInterval(i) * interval, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: { () -> Void in
-                cell.center = CGPoint(x: originPoint.x - 2.0,  y: originPoint.y)
-                cell.isHidden = false;
-            }, completion: { (finished) -> Void in
-                UIView.animate(withDuration: 0.1, delay: 0, options: UIView.AnimationOptions.curveEaseIn, animations: { () -> Void in
-                    cell.center = CGPoint(x: originPoint.x + 2.0,  y: originPoint.y)
-                }, completion: { (finished) -> Void in
-                    UIView.animate(withDuration: 0.1, delay: 0, options: UIView.AnimationOptions.curveEaseIn, animations: { () -> Void in
-                        cell.center = originPoint
-                        }, completion: { (finished) -> Void in
-                            
-                    })
-                })
-            })
+extension HomeViewController{
+    func cellAnimation(cell: UICollectionViewCell, interval: TimeInterval){
+        UIView.animate(withDuration: 0.0) {
+            cell.transform = CGAffineTransform(translationX: CFWidth, y: 0.0)
         }
+        delay(by: interval) {
+            UIView.animate(withDuration: interval + 0.1) {
+                cell.transform = CGAffineTransform.identity
+            }
+        }
+    }
+    
+    func delay(by delay: TimeInterval, code block: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(delay * Double(NSEC_PER_SEC)) / Double(NSEC_PER_SEC),
+            execute: block)
     }
 }
