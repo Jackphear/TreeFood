@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import SnapKit
+
+import HandyJSON
+import SwiftyJSON
 
 class HomeViewController: UIViewController {
     // MARK: - 私有属性
@@ -16,15 +20,26 @@ class HomeViewController: UIViewController {
     fileprivate let SuggesttCellID = "SuggestCollectionViewCell"
     fileprivate let PreferenceCellID = "PreferenceCollectionViewCell"
     fileprivate let SectionHeadCellID = "SectionHeadCell"
+    
+    private var homeData = HomeData()
+    private var recommendData = [Dish]()
+    private var supplements = [Supplement]()
+
 
     // MARK: - 界面初始化
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .black
         setUpUI()
-        print("1")
+
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //cellAnimation()
+        self.collectionView.cellAnimation(animationTime: 2, interval: 0.1)
+    }
     // MARK: - 控件
 
     lazy var collectionView: UICollectionView = {
@@ -56,13 +71,26 @@ class HomeViewController: UIViewController {
             make.top.equalTo(self.navigation.bar.snp.top).offset(0.fit)
         }
     }
-}
+    
+//    func setUpData(){
+//        //文件路径
+//        let path = Bundle.main.path(forResource: "homeList", ofType: "json")
+//        //json转NSData
+//        let jsonData = NSData(contentsOfFile: path!)
+//        //解析json
+//        let json = JSON(jsonData!)
+//    }
+    
 
+}
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 5
     }
 
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        //
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
@@ -131,5 +159,33 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     // section间距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10.fit
+    }
+}
+
+//MARK: - to do
+extension UICollectionView{
+    func cellAnimation(animationTime:TimeInterval, interval:TimeInterval){
+        let array = self.numberOfSections
+        for i in 0...(array - 1){
+            //let path = array[i]
+            let cell = self.visibleCells[i]
+            cell.isHidden = true
+            let originPoint : CGPoint = cell.center
+            cell.center = CGPoint(x: -cell.frame.size.width,  y: originPoint.y)
+            UIView.animate(withDuration: animationTime + TimeInterval(i) * interval, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: { () -> Void in
+                cell.center = CGPoint(x: originPoint.x - 2.0,  y: originPoint.y)
+                cell.isHidden = false;
+            }, completion: { (finished) -> Void in
+                UIView.animate(withDuration: 0.1, delay: 0, options: UIView.AnimationOptions.curveEaseIn, animations: { () -> Void in
+                    cell.center = CGPoint(x: originPoint.x + 2.0,  y: originPoint.y)
+                }, completion: { (finished) -> Void in
+                    UIView.animate(withDuration: 0.1, delay: 0, options: UIView.AnimationOptions.curveEaseIn, animations: { () -> Void in
+                        cell.center = originPoint
+                        }, completion: { (finished) -> Void in
+                            
+                    })
+                })
+            })
+        }
     }
 }

@@ -68,7 +68,7 @@ class HomeBaseCollectionViewCell: UICollectionViewCell {
 
         moreLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(TopSpacing)
-            make.width.equalTo(30.fit)
+            make.width.equalTo(40.fit)
             make.height.equalTo(28.fit)
             make.right.equalToSuperview().offset(-30.fit)
         }

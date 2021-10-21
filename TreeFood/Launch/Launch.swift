@@ -41,6 +41,7 @@ func Launch() -> ESTabBarController {
     tabBarController.tabBar.shadowImage = UIImage(named: "background")
     tabBarController.tabBar.barTintColor = UIColor.red
     tabBarController.tabBar.backgroundImage = UIImage(named: "background")
+
     
     return tabBarController
 }

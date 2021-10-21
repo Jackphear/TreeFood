@@ -18,6 +18,7 @@
 		93449AC7271EA61D0094AA60 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC6271EA61D0094AA60 /* Const.swift */; };
 		93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */; };
 		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
+		9389083827217AB0001897AF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389083727217AB0001897AF /* HomeModel.swift */; };
 		93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF7271E682000EB1003 /* AppDelegate.swift */; };
 		93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF9271E682000EB1003 /* SceneDelegate.swift */; };
 		93981BFC271E682000EB1003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BFB271E682000EB1003 /* ViewController.swift */; };
@@ -28,7 +29,7 @@
 		93981C19271E682600EB1003 /* TreeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C18271E682600EB1003 /* TreeFoodUITests.swift */; };
 		93981C1B271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */; };
 		93E543E8271FD90F00E6DE66 /* record.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E5271FD90F00E6DE66 /* record.json */; };
-		93E543E9271FD90F00E6DE66 /* homelist.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E6271FD90F00E6DE66 /* homelist.json */; };
+		93E543E9271FD90F00E6DE66 /* homeList.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E6271FD90F00E6DE66 /* homeList.json */; };
 		93E543EA271FD90F00E6DE66 /* add.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E7271FD90F00E6DE66 /* add.json */; };
 		93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543EB271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift */; };
 		93E543EE271FECDC00E6DE66 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543ED271FECDC00E6DE66 /* SearchCollectionViewCell.swift */; };
@@ -68,6 +69,7 @@
 		93449AC6271EA61D0094AA60 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		9389083727217AB0001897AF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		93981BF4271E682000EB1003 /* TreeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981BF7271E682000EB1003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93981BF9271E682000EB1003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 		93981C18271E682600EB1003 /* TreeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITests.swift; sourceTree = "<group>"; };
 		93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		93E543E5271FD90F00E6DE66 /* record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record.json; sourceTree = "<group>"; };
-		93E543E6271FD90F00E6DE66 /* homelist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homelist.json; sourceTree = "<group>"; };
+		93E543E6271FD90F00E6DE66 /* homeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeList.json; sourceTree = "<group>"; };
 		93E543E7271FD90F00E6DE66 /* add.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add.json; sourceTree = "<group>"; };
 		93E543EB271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		93E543ED271FECDC00E6DE66 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		93449AA9271E72070094AA60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9389083727217AB0001897AF /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,7 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				93E543E7271FD90F00E6DE66 /* add.json */,
-				93E543E6271FD90F00E6DE66 /* homelist.json */,
+				93E543E6271FD90F00E6DE66 /* homeList.json */,
 				93E543E5271FD90F00E6DE66 /* record.json */,
 			);
 			path = Data;
@@ -477,7 +480,7 @@
 				93981C04271E682500EB1003 /* LaunchScreen.storyboard in Resources */,
 				93981C01271E682500EB1003 /* Assets.xcassets in Resources */,
 				93981BFF271E682000EB1003 /* Main.storyboard in Resources */,
-				93E543E9271FD90F00E6DE66 /* homelist.json in Resources */,
+				93E543E9271FD90F00E6DE66 /* homeList.json in Resources */,
 				93E543E8271FD90F00E6DE66 /* record.json in Resources */,
 				93E543EA271FD90F00E6DE66 /* add.json in Resources */,
 			);
@@ -554,6 +557,7 @@
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
 				93E543F0271FECF000E6DE66 /* RecommendCollectionViewCell.swift in Sources */,
+				9389083827217AB0001897AF /* HomeModel.swift in Sources */,
 				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
 				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
