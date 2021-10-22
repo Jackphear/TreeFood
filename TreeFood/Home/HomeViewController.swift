@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .black
         setUpUI()
-
+        print(1)
         setUpData()
     }
 
