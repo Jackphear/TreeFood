@@ -33,12 +33,11 @@ class HomeViewController: UIViewController {
         self.view.backgroundColor = .black
         setUpUI()
 
+        setUpData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //cellAnimation()
-        //self.collectionView.cellAnimation(animationTime: 2, interval: 0.1)
     }
     // MARK: - 控件
 
@@ -72,14 +71,48 @@ class HomeViewController: UIViewController {
         }
     }
     
-//    func setUpData(){
-//        //文件路径
-//        let path = Bundle.main.path(forResource: "homeList", ofType: "json")
-//        //json转NSData
-//        let jsonData = NSData(contentsOfFile: path!)
-//        //解析json
-//        let json = JSON(jsonData!)
-//    }
+    func setUpData(){
+        //文件路径
+        let path = Bundle.main.path(forResource: "homeList", ofType: "json")
+        //json转NSData
+        let jsonData = NSData(contentsOfFile: path!)
+        //解析json
+        let json = JSON(jsonData!)
+        homeData = JSONDeserializer<HomeData>.deserializeFrom(json: json["data"].description)!
+        
+        //营养补充
+        for item in self.homeData.nutritionalSupplement {
+            for supplement in item.supplements {
+                self.supplements.append(supplement)
+            }
+        }
+        
+        //每日推荐根据时间推荐
+        for item in self.homeData.dishes {
+            let date = Date()
+            let nowHour = date.hour()
+            if nowHour > 5 && nowHour < 10 {
+                if item.speciesName == "早餐" {
+                    for dish in item.content {
+                        self.recommendData.append(dish)
+                    }
+                }
+            }else if nowHour >= 10 && nowHour < 17 {
+                if item.speciesName == "午餐" {
+                    for dish in item.content {
+                        self.recommendData.append(dish)
+                    }
+                }
+            }else {
+                if item.speciesName == "晚餐" {
+                    for dish in item.content {
+                        self.recommendData.append(dish)
+                    }
+                }
+            }
+        }
+       
+    }
     
 
 }
@@ -174,7 +207,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-//MARK: - to do
+//MARK: - 动画
 extension HomeViewController{
     func cellAnimation(cell: UICollectionViewCell, interval: TimeInterval){
         UIView.animate(withDuration: 0.0) {
@@ -192,4 +225,6 @@ extension HomeViewController{
             deadline: DispatchTime.now() + Double(delay * Double(NSEC_PER_SEC)) / Double(NSEC_PER_SEC),
             execute: block)
     }
+    
+    
 }

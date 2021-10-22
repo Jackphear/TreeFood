@@ -319,6 +319,17 @@ extension Date {
         return com.day!
         
     }
+    
+    //MARK: 小时
+    func hour() -> Int {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss.SSS"
+        let time = formatter.string(from: self) as String
+        let hour = time.prefix(2)
+        return Int(hour) ?? 25
+    }
+    
+    
     //MARK: 星期几
     func weekDay()->Int{
         let interval = Int(self.timeIntervalSince1970)
