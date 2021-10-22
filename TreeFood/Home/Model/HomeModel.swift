@@ -9,6 +9,7 @@ import Foundation
 import HandyJSON
 
 // MARK: - 主页面所有数据
+
 struct HomeData: HandyJSON {
     // 菜品
     let dishes = [Dishes]()
@@ -20,16 +21,16 @@ struct HomeData: HandyJSON {
 }
 
 // MARK: - 所有菜品
+
 struct Dishes: HandyJSON {
-    
     let imageName = ""
     let speciesName = ""
     let content = [Dish]()
 }
 
 // MARK: - 菜
+
 struct Dish: HandyJSON {
-    
     let name = ""
     let image = ""
     // 描述
@@ -41,6 +42,7 @@ struct Dish: HandyJSON {
 }
 
 // MARK: - 食材
+
 struct Ingredient: HandyJSON {
     let image = ""
     let name = ""
@@ -50,12 +52,14 @@ struct Ingredient: HandyJSON {
 }
 
 // MARK: - 营养补给
+
 struct NutritionalSupplement: HandyJSON {
     let categoryName = ""
     let supplements = [Supplement]()
 }
 
 // MARK: - 补给
+
 struct Supplement: HandyJSON {
     let image = ""
     let name = ""
@@ -71,17 +75,29 @@ struct Supplement: HandyJSON {
 }
 
 // MARK: - 建议补充
+
 struct SuggestSupplement: HandyJSON {
     let supplements = [Supplement]()
 }
 
 // MARK: - 喜爱
+
 struct Preference: HandyJSON {
     let dishes = [Dish]()
 }
 
 // MARK: - 背包食材
+
 struct BagFood {
     let name: String
     let caloris: Int
+}
+
+// MARK: - 用餐类型
+
+public enum species: String {
+    case Breakfast = "早餐"
+    case Launch = "午餐"
+    case Dinner = "晚餐"
+    case Snacks = "小食"
 }

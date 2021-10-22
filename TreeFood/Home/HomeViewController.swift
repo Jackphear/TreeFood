@@ -5,8 +5,8 @@
 //  Created by 王韬 on 2021/10/19.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 import HandyJSON
 import SwiftyJSON
@@ -20,25 +20,24 @@ class HomeViewController: UIViewController {
     fileprivate let SuggesttCellID = "SuggestCollectionViewCell"
     fileprivate let PreferenceCellID = "PreferenceCollectionViewCell"
     fileprivate let SectionHeadCellID = "SectionHeadCell"
-    
+
     private var homeData = HomeData()
     private var recommendData = [Dish]()
     private var supplements = [Supplement]()
-
 
     // MARK: - 界面初始化
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .black
+        view.backgroundColor = .black
         setUpUI()
-        print(1)
         setUpData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+
     // MARK: - 控件
 
     lazy var collectionView: UICollectionView = {
@@ -58,9 +57,10 @@ class HomeViewController: UIViewController {
         collcetionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeadCellID)
         return collcetionView
     }()
-    
-    //MARK: -私有方法
-    func setUpUI(){
+
+    // MARK: - 私有方法
+
+    func setUpUI() {
         view.backgroundColor = .white
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
@@ -70,60 +70,55 @@ class HomeViewController: UIViewController {
             make.top.equalTo(self.navigation.bar.snp.top).offset(0.fit)
         }
     }
-    
-    func setUpData(){
-        //文件路径
+
+    func setUpData() {
+        // 文件路径
         let path = Bundle.main.path(forResource: "homeList", ofType: "json")
-        //json转NSData
+        // json转NSData
         let jsonData = NSData(contentsOfFile: path!)
-        //解析json
+        // 解析json
         let json = JSON(jsonData!)
         homeData = JSONDeserializer<HomeData>.deserializeFrom(json: json["data"].description)!
-        
-        //营养补充
-        for item in self.homeData.nutritionalSupplement {
+
+        // 营养补充
+        for item in homeData.nutritionalSupplement {
             for supplement in item.supplements {
-                self.supplements.append(supplement)
+                supplements.append(supplement)
             }
         }
-        
-        //每日推荐根据时间推荐
-        for item in self.homeData.dishes {
+
+        // 每日推荐根据时间推荐
+        for item in homeData.dishes {
             let date = Date()
             let nowHour = date.hour()
             if nowHour > 5 && nowHour < 10 {
                 if item.speciesName == "早餐" {
                     for dish in item.content {
-                        self.recommendData.append(dish)
+                        recommendData.append(dish)
                     }
                 }
-            }else if nowHour >= 10 && nowHour < 17 {
+            } else if nowHour >= 10 && nowHour < 17 {
                 if item.speciesName == "午餐" {
                     for dish in item.content {
-                        self.recommendData.append(dish)
+                        recommendData.append(dish)
                     }
                 }
-            }else {
+            } else {
                 if item.speciesName == "晚餐" {
                     for dish in item.content {
-                        self.recommendData.append(dish)
+                        recommendData.append(dish)
                     }
                 }
             }
         }
-       
     }
-    
-
 }
+
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 5
     }
 
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        //
-    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
@@ -132,8 +127,22 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCellID, for: indexPath) as! SearchCollectionViewCell
-            cell.backgroundColor = .black
-            cellAnimation(cell: cell, interval: 1)
+            cellAnimation(cell: cell, interval: 0.25)
+            cell.searchCallBack = { ()
+                print("search to do")
+            }
+            cell.cellCallBack = { type in
+                switch type {
+                case .Breakfast:
+                    print("searchCell to do")
+                case .Launch:
+                    print("searchCell to do")
+                case .Dinner:
+                    print("searchCell to do")
+                case .Snacks:
+                    print("searchCell to do")
+                }
+            }
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCellID, for: indexPath) as! RecommendCollectionViewCell
@@ -207,9 +216,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-//MARK: - 动画
-extension HomeViewController{
-    func cellAnimation(cell: UICollectionViewCell, interval: TimeInterval){
+// MARK: - 动画
+
+extension HomeViewController {
+    func cellAnimation(cell: UICollectionViewCell, interval: TimeInterval) {
         UIView.animate(withDuration: 0.0) {
             cell.transform = CGAffineTransform(translationX: CFWidth, y: 0.0)
         }
@@ -219,12 +229,10 @@ extension HomeViewController{
             }
         }
     }
-    
-    func delay(by delay: TimeInterval, code block: @escaping () -> ()) {
+
+    func delay(by delay: TimeInterval, code block: @escaping () -> Void) {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(delay * Double(NSEC_PER_SEC)) / Double(NSEC_PER_SEC),
             execute: block)
     }
-    
-    
 }
