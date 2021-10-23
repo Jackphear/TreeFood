@@ -5,9 +5,9 @@
 //  Created by 王韬 on 2021/10/19.
 //
 
+import EachNavigationBar
 import Foundation
 import UIKit
-import EachNavigationBar
 
 extension UIImage {
     func image(withIcon iconCode: String?, inFont fontName: String?, size: Int, color: UIColor?) -> UIImage? {
@@ -27,74 +27,87 @@ extension UIImage {
     }
 }
 
-
 public extension Double {
     var fitWidth_Double: Double {
-        return self/414.0 * Double(CFWidth)
+        return self / 414.0 * Double(CFWidth)
     }
+
     var fitHeight_Double: Double {
-        return self/896.0 * Double(CFHeight)
+        return self / 896.0 * Double(CFHeight)
     }
+
     var fitWidth_CGFloat: CGFloat {
-        return CGFloat(self)/414.0 * CGFloat(CFWidth)
+        return CGFloat(self) / 414.0 * CGFloat(CFWidth)
     }
+
     var fitHeight_CGFloat: CGFloat {
-        return CGFloat(self)/896.0 * CGFloat(CFHeight)
+        return CGFloat(self) / 896.0 * CGFloat(CFHeight)
     }
-    var fitWidth_Int: Int{
-        return Int(self/414.0 * Double(CFWidth))
+
+    var fitWidth_Int: Int {
+        return Int(self / 414.0 * Double(CFWidth))
     }
-    var fitHeight_Int: Int{
-        return Int(self/896.0 * Double(CFHeight))
+
+    var fitHeight_Int: Int {
+        return Int(self / 896.0 * Double(CFHeight))
     }
 }
+
 extension Double {
     var fit: CGFloat {
-        return CGFloat(self/414.0) * UIScreen.main.bounds.width
+        return CGFloat(self / 414.0) * UIScreen.main.bounds.width
     }
+
     var fitW: CGFloat {
-        return CGFloat(self/414.0) * UIScreen.main.bounds.width
+        return CGFloat(self / 414.0) * UIScreen.main.bounds.width
     }
+
     var fitH: CGFloat {
-        return CGFloat(self/896.0) * UIScreen.main.bounds.width
+        return CGFloat(self / 896.0) * UIScreen.main.bounds.width
     }
 }
+
 extension Int {
     var fit: Int {
-        return Int(CGFloat(self)/414.0 * UIScreen.main.bounds.width)
+        return Int(CGFloat(self) / 414.0 * UIScreen.main.bounds.width)
     }
+
     var fitW: Int {
-        return Int(CGFloat(self)/414.0 * UIScreen.main.bounds.width)
+        return Int(CGFloat(self) / 414.0 * UIScreen.main.bounds.width)
     }
+
     var fitH: Int {
-        return Int(CGFloat(self)/896.0 * UIScreen.main.bounds.width)
+        return Int(CGFloat(self) / 896.0 * UIScreen.main.bounds.width)
     }
 }
+
 extension CGFloat {
     var fitScreen: CGFloat {
-        return CGFloat(self/414.0 * UIScreen.main.bounds.size.width)
+        return CGFloat(self / 414.0 * UIScreen.main.bounds.size.width)
     }
+
     var fit: CGFloat {
-        return CGFloat(self/414.0) * UIScreen.main.bounds.width
+        return CGFloat(self / 414.0) * UIScreen.main.bounds.width
     }
+
     var fitW: CGFloat {
-        return CGFloat(self/414.0) * UIScreen.main.bounds.width
+        return CGFloat(self / 414.0) * UIScreen.main.bounds.width
     }
+
     var fitH: CGFloat {
-        return CGFloat(self/896.0) * UIScreen.main.bounds.width
+        return CGFloat(self / 896.0) * UIScreen.main.bounds.width
     }
 }
 
 extension CGRect {
     var fit: CGRect {
-        return CGRect(x: self.minX.fitScreen, y: self.minY.fitScreen, width: self.width.fitScreen, height: self.height.fitScreen)
+        return CGRect(x: minX.fitScreen, y: minY.fitScreen, width: width.fitScreen, height: height.fitScreen)
     }
 }
 
 extension UIView {
- 
-    //Colors：渐变色色值数组
-    func setLayerColors(_ colors:[CGColor])  {
+    // Colors：渐变色色值数组
+    func setLayerColors(_ colors: [CGColor]) {
         let layer = CAGradientLayer()
         layer.frame = bounds
         layer.colors = colors
@@ -102,9 +115,9 @@ extension UIView {
         layer.endPoint = CGPoint(x: 0, y: 1)
         self.layer.addSublayer(layer)
     }
-    
-    //Colors：渐变色色值数组 单独的扩展， 要改
-    func setLayerColorsForMine(_ colors:[CGColor])  {
+
+    // Colors：渐变色色值数组 单独的扩展， 要改
+    func setLayerColorsForMine(_ colors: [CGColor]) {
         let layer = CAGradientLayer()
         layer.frame = bounds
         layer.colors = colors
@@ -119,8 +132,9 @@ extension UIView {
         self.layer.sublayers?.removeAll()
         self.layer.addSublayer(layer)
     }
-    //Colors：渐变色色值数组 单独的扩展， 要改
-    func setLayerColorsForHome(_ colors:[CGColor])  {
+
+    // Colors：渐变色色值数组 单独的扩展， 要改
+    func setLayerColorsForHome(_ colors: [CGColor]) {
         let layer = CAGradientLayer()
         layer.frame = bounds
         layer.colors = colors
@@ -136,55 +150,54 @@ extension UIView {
         self.layer.addSublayer(layer)
     }
 }
-extension UIViewController{
-    public func setTabBar(controller: UIViewController, title: String, image: UIImage, selectedImage: UIImage) -> UIViewController{
+
+extension UIViewController {
+    public func setTabBar(controller: UIViewController, title: String, image: UIImage, selectedImage: UIImage) -> UIViewController {
         controller.tabBarItem = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
         return controller
     }
-    public func setUIVC(_ viewController: UIViewController, title: String){
+
+    public func setUIVC(_ viewController: UIViewController, title: String) {
         viewController.navigationItem.title = title
         viewController.view.backgroundColor = .white
         viewController.navigationController!.setLargeTitle(viewController.navigationController!)
     }
-
 }
 
-
-extension UINavigationController{
-    public func setLargeTitle(_ navigationController: UINavigationController){
+extension UINavigationController {
+    public func setLargeTitle(_ navigationController: UINavigationController) {
         /// 设置大标题
-        if #available(iOS 11.0, *)
-        {
+        if #available(iOS 11.0, *) {
             navigationController.navigationItem.largeTitleDisplayMode = UINavigationItem.LargeTitleDisplayMode.automatic
             navigationController.navigationBar.prefersLargeTitles = true
         }
         /// 黑线消失
         navigationController.navigationBar.shadowImage = UIImage()
     }
-    
 }
 
 extension UIColor {
-    convenience init(r : CGFloat, g : CGFloat, b : CGFloat) {
+    convenience init(r: CGFloat, g: CGFloat, b: CGFloat) {
         self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1.0)
     }
-    
-    convenience init(r : CGFloat, g : CGFloat, b : CGFloat,alpha: CGFloat) {
+
+    convenience init(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat) {
         self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: alpha)
     }
-    
+
     class func randomColor() -> UIColor {
         return UIColor(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
     }
-    
-    class func navigationBarTintColor() -> UIColor{
+
+    class func navigationBarTintColor() -> UIColor {
         return UIColor(r: 94, g: 199, b: 217)
     }
-    
-    class func globalCyanColor() -> UIColor{
+
+    class func globalCyanColor() -> UIColor {
         return UIColor(r: 7, g: 216, b: 243)
     }
 }
+
 extension UIColor {
     public convenience init?(hex: String) {
         let r, g, b, a: CGFloat
@@ -198,10 +211,10 @@ extension UIColor {
                 var hexNumber: UInt64 = 0
 
                 if scanner.scanHexInt64(&hexNumber) {
-                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
-                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
-                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
-                    a = CGFloat(hexNumber & 0x000000ff) / 255
+                    r = CGFloat((hexNumber & 0xFF000000) >> 24) / 255
+                    g = CGFloat((hexNumber & 0x00FF0000) >> 16) / 255
+                    b = CGFloat((hexNumber & 0x0000FF00) >> 8) / 255
+                    a = CGFloat(hexNumber & 0x000000FF) / 255
 
                     self.init(red: r, green: g, blue: b, alpha: a)
                     return
@@ -212,7 +225,8 @@ extension UIColor {
         return nil
     }
 }
-extension UIView{
+
+extension UIView {
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -222,6 +236,7 @@ extension UIView{
             layer.cornerRadius = newValue
         }
     }
+
     @IBInspectable
     var shadowRadius: CGFloat {
         get {
@@ -231,25 +246,27 @@ extension UIView{
             layer.shadowRadius = newValue
         }
     }
+
     @IBInspectable
-    var shadowOpacity:Float{
-        get{
+    var shadowOpacity: Float {
+        get {
             return layer.shadowOpacity
         }
-        set{
+        set {
             layer.shadowOpacity = newValue
         }
     }
+
     @IBInspectable
-    var shadowColor:UIColor{
-        get{
-            return (layer.shadowColor != nil ? UIColor(cgColor: layer.shadowColor!) :nil)!
+    var shadowColor: UIColor {
+        get {
+            return (layer.shadowColor != nil ? UIColor(cgColor: layer.shadowColor!) : nil)!
         }
-        set{
+        set {
             layer.shadowColor = newValue.cgColor
         }
     }
-    
+
     @IBInspectable
     var shadowOffset: CGSize {
         get {
@@ -262,65 +279,69 @@ extension UIView{
 }
 
 extension UIView {
-    
     /// 部分圆角
     ///
     /// - Parameters:
     ///   - corners: 需要实现为圆角的角，可传入多个
     ///   - radii: 圆角半径
     func corner(byRoundingCorners corners: UIRectCorner, radii: CGFloat) {
-        let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
+        let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
         let maskLayer = CAShapeLayer()
-        maskLayer.frame = self.bounds
+        maskLayer.frame = bounds
         maskLayer.path = maskPath.cgPath
-        self.layer.mask = maskLayer
+        layer.mask = maskLayer
     }
 }
-extension UIImage
-{
+
+extension UIImage {
     /**
      根据传入的宽度生成一张图片
      按照图片的宽高比来压缩以前的图片
      :param: width 制定宽度
      */
-    func imageWithScale(width: CGFloat) -> UIImage
-    {
+    func imageWithScale(width: CGFloat) -> UIImage {
         // 1.根据宽度计算高度
-        let height = width *  size.height / size.width
+        let height = width * size.height / size.width
         // 2.按照宽高比绘制一张新的图片
         let currentSize = CGSize(width: width, height: height)
         UIGraphicsBeginImageContext(currentSize)
         draw(in: CGRect(origin: CGPoint.zero, size: currentSize))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return newImage!
     }
 }
+
 extension Date {
-    //MARK: - 获取日期各种值
-    //MARK: 年
-    func year() ->Int {
+    // MARK: - 获取日期各种值
+
+    // MARK: 年
+
+    func year() -> Int {
         let calendar = NSCalendar.current
-        let com = calendar.dateComponents([.year,.month,.day], from: self)
+        let com = calendar.dateComponents([.year, .month, .day], from: self)
         return com.year!
     }
-    //MARK: 月
-    func month() ->Int {
+
+    // MARK: 月
+
+    func month() -> Int {
         let calendar = NSCalendar.current
-        let com = calendar.dateComponents([.year,.month,.day], from: self)
+        let com = calendar.dateComponents([.year, .month, .day], from: self)
         return com.month!
-        
     }
-    //MARK: 日
-    func day() ->Int {
+
+    // MARK: 日
+
+    func day() -> Int {
         let calendar = NSCalendar.current
-        let com = calendar.dateComponents([.year,.month,.day], from: self)
+        let com = calendar.dateComponents([.year, .month, .day], from: self)
         return com.day!
-        
     }
-    
-    //MARK: 小时
+
+    // MARK: 小时
+
     func hour() -> Int {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm:ss.SSS"
@@ -328,64 +349,87 @@ extension Date {
         let hour = time.prefix(2)
         return Int(hour) ?? 25
     }
-    
-    
-    //MARK: 星期几
-    func weekDay()->Int{
-        let interval = Int(self.timeIntervalSince1970)
-        let days = Int(interval/86400) // 24*60*60
-        let weekday = ((days + 4)%7+7)%7
+
+    func getSpecie() -> Species {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss.SSS"
+        let time = formatter.string(from: self) as String
+        let hour = time.prefix(2)
+        let intHout = Int(hour)!
+        if intHout > 5 && intHout < 10 {
+            return Species.Breakfast
+        }
+        if intHout >= 10 && intHout < 14 {
+            return Species.Launch
+        }
+        if intHout > 14 && intHout < 19 {
+            return Species.Dinner
+        }
+        return Species.Snacks
+    }
+
+    // MARK: 星期几
+
+    func weekDay() -> Int {
+        let interval = Int(timeIntervalSince1970)
+        let days = Int(interval / 86400) // 24*60*60
+        let weekday = ((days + 4) % 7 + 7) % 7
         return weekday == 0 ? 7 : weekday
     }
-    //MARK: 当月天数
-    func countOfDaysInMonth() ->Int {
-        let calendar = Calendar(identifier:Calendar.Identifier.gregorian)
+
+    // MARK: 当月天数
+
+    func countOfDaysInMonth() -> Int {
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         let range = (calendar as NSCalendar?)?.range(of: NSCalendar.Unit.day, in: NSCalendar.Unit.month, for: self)
         return (range?.length)!
-        
     }
-    //MARK: 当月第一天是星期几
-    func firstWeekDay() ->Int {
-        //1.Sun. 2.Mon. 3.Thes. 4.Wed. 5.Thur. 6.Fri. 7.Sat.
-        let calendar = Calendar(identifier:Calendar.Identifier.gregorian)
+
+    // MARK: 当月第一天是星期几
+
+    func firstWeekDay() -> Int {
+        // 1.Sun. 2.Mon. 3.Thes. 4.Wed. 5.Thur. 6.Fri. 7.Sat.
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         let firstWeekDay = (calendar as NSCalendar?)?.ordinality(of: NSCalendar.Unit.weekday, in: NSCalendar.Unit.weekOfMonth, for: self)
         return firstWeekDay! - 1
-        
     }
-    //MARK: - 日期的一些比较
-    //是否是今天
-    func isToday()->Bool {
+
+    // MARK: - 日期的一些比较
+
+    // 是否是今天
+    func isToday() -> Bool {
         let calendar = NSCalendar.current
-        let com = calendar.dateComponents([.year,.month,.day], from: self)
-        let comNow = calendar.dateComponents([.year,.month,.day], from: Date())
+        let com = calendar.dateComponents([.year, .month, .day], from: self)
+        let comNow = calendar.dateComponents([.year, .month, .day], from: Date())
         return com.year == comNow.year && com.month == comNow.month && com.day == comNow.day
     }
-    //是否是这个月
-    func isThisMonth()->Bool {
+
+    // 是否是这个月
+    func isThisMonth() -> Bool {
         let calendar = NSCalendar.current
-        let com = calendar.dateComponents([.year,.month,.day], from: self)
-        let comNow = calendar.dateComponents([.year,.month,.day], from: Date())
+        let com = calendar.dateComponents([.year, .month, .day], from: self)
+        let comNow = calendar.dateComponents([.year, .month, .day], from: Date())
         return com.year == comNow.year && com.month == comNow.month
     }
-    
-    func getWeekDay(dateTime:String)->String{
+
+    func getWeekDay(dateTime: String) -> String {
         let dateFmt = DateFormatter()
         dateFmt.dateFormat = "yyyy-MM-dd"
         let date = dateFmt.date(from: dateTime)
         let interval = Int(date!.timeIntervalSince1970)
-        let days = Int(interval/86400) // 24*60*60
-        let weekday = ((days + 5)%7+7)%7
-        let weekDays = ["周日","周一","周二","周三","周四","周五","周六"]
+        let days = Int(interval / 86400) // 24*60*60
+        let weekday = ((days + 5) % 7 + 7) % 7
+        let weekDays = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
         return weekDays[weekday]
     }
-    
+
     // 获取N天前后
     func getDate(_ currentDate: Date?, day: Int) -> Date? {
         var days = day // n天后的天数
-        days = Int((days == 0 ? 2.0 : Double(days))) //未指定天数则默认为两天
+        days = Int(days == 0 ? 2.0 : Double(days)) // 未指定天数则默认为两天
         var appointDate: Date? // 指定日期声明
         let oneDay: TimeInterval = 24 * 60 * 60 // 一天一共有多少秒
-        appointDate = currentDate?.addingTimeInterval((oneDay * Double(days)))
+        appointDate = currentDate?.addingTimeInterval(oneDay * Double(days))
         return appointDate
     }
 }

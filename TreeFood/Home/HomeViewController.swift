@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     private var homeData = HomeData()
     private var recommendData = [Dish]()
     private var supplements = [Supplement]()
+    private var FoodType = [Species]()
 
     // MARK: - 界面初始化
 
@@ -90,23 +91,34 @@ class HomeViewController: UIViewController {
         // 每日推荐根据时间推荐
         for item in homeData.dishes {
             let date = Date()
-            let nowHour = date.hour()
-            if nowHour > 5 && nowHour < 10 {
-                if item.speciesName == "早餐" {
+            let type = date.getSpecie()
+            switch type {
+            case .Breakfast:
+                if item.speciesName == type.rawValue {
                     for dish in item.content {
                         recommendData.append(dish)
+                        FoodType.append(type)
                     }
                 }
-            } else if nowHour >= 10 && nowHour < 17 {
-                if item.speciesName == "午餐" {
+            case .Launch:
+                if item.speciesName == type.rawValue {
                     for dish in item.content {
                         recommendData.append(dish)
+                        FoodType.append(type)
                     }
                 }
-            } else {
-                if item.speciesName == "晚餐" {
+            case .Dinner:
+                if item.speciesName == type.rawValue {
                     for dish in item.content {
                         recommendData.append(dish)
+                        FoodType.append(type)
+                    }
+                }
+            case .Snacks:
+                if item.speciesName == type.rawValue {
+                    for dish in item.content {
+                        recommendData.append(dish)
+                        FoodType.append(type)
                     }
                 }
             }
@@ -146,8 +158,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCellID, for: indexPath) as! RecommendCollectionViewCell
-            cell.backgroundColor = .black
-            cellAnimation(cell: cell, interval: 1)
+            cell.updateUI(with: recommendData, FoodType: FoodType)
+            cellAnimation(cell: cell, interval: 0.25)
+            cell.moreButtonBlock = { ()
+                print("推荐更多 to do")
+            }
+            cell.cellCallBack = { (data, type) in
+                print("recommendCell to do")
+            }
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SupplementCellID, for: indexPath) as! SupplementCollectionViewCell

@@ -10,7 +10,7 @@ import UIKit
 class SearchCollectionViewCell: UICollectionViewCell {
     // MARK: - 公有属性
 
-    public var cellCallBack: ((species) -> Void)?
+    public var cellCallBack: ((Species) -> Void)?
     public var searchCallBack: (() -> Void)?
 
     // MARK: - 私有属性
@@ -184,7 +184,7 @@ extension SearchCollectionViewCell: UICollectionViewDelegate, UICollectionViewDa
 // MARK: - 列表cell
 
 class SearchCell: UICollectionViewCell {
-    public func updateUI(with type: species) {
+    public func updateUI(with type: Species) {
         imageView.image = UIImage(named: type.rawValue)
         infoLabel.text = type.rawValue
     }

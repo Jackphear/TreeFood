@@ -262,12 +262,12 @@
 		93981BEB271E682000EB1003 = {
 			isa = PBXGroup;
 			children = (
+				FDA33306DEB8FF44452F4E0E /* Frameworks */,
+				4604814E860B95E01F2E5035 /* Pods */,
+				93981BF5271E682000EB1003 /* Products */,
 				93981BF6271E682000EB1003 /* TreeFood */,
 				93981C0D271E682600EB1003 /* TreeFoodTests */,
 				93981C17271E682600EB1003 /* TreeFoodUITests */,
-				93981BF5271E682000EB1003 /* Products */,
-				4604814E860B95E01F2E5035 /* Pods */,
-				FDA33306DEB8FF44452F4E0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,19 +284,19 @@
 		93981BF6271E682000EB1003 /* TreeFood */ = {
 			isa = PBXGroup;
 			children = (
-				93E543E4271FD8CF00E6DE66 /* Data */,
+				93981C02271E682500EB1003 /* LaunchScreen.storyboard */,
+				93981BFD271E682000EB1003 /* Main.storyboard */,
 				93981C05271E682500EB1003 /* Info.plist */,
 				93981BF7271E682000EB1003 /* AppDelegate.swift */,
 				93981BF9271E682000EB1003 /* SceneDelegate.swift */,
 				93981BFB271E682000EB1003 /* ViewController.swift */,
 				93981C00271E682500EB1003 /* Assets.xcassets */,
+				93449AA6271E71540094AA60 /* Extension+Const */,
 				93449AA7271E71C70094AA60 /* Add */,
 				93449AA5271E71320094AA60 /* Analyze */,
-				93449AA6271E71540094AA60 /* Extension+Const */,
+				93E543E4271FD8CF00E6DE66 /* Data */,
 				93BE47FF271E7013001ED671 /* Home */,
 				93449ABC271E73940094AA60 /* Launch */,
-				93981C02271E682500EB1003 /* LaunchScreen.storyboard */,
-				93981BFD271E682000EB1003 /* Main.storyboard */,
 				93BE4800271E701C001ED671 /* Mine */,
 				93BE4801271E7025001ED671 /* Record */,
 			);

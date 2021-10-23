@@ -8,5 +8,11 @@
 import UIKit
 
 class PreferenceCollectionViewCell: UICollectionViewCell {
+    //MARK: -公有属性
     
+    //MARK: -私有属性
+    
+    //MARK: -公有方法
+    
+    //MARK: -私有方法
 }

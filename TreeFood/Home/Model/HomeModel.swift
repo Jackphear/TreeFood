@@ -95,7 +95,7 @@ struct BagFood {
 
 // MARK: - 用餐类型
 
-public enum species: String {
+public enum Species: String {
     case Breakfast = "早餐"
     case Launch = "午餐"
     case Dinner = "晚餐"
