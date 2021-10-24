@@ -172,7 +172,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.moreButtonBlock = { ()
                 print("推荐更多 to do")
             }
-            cell.cellCallBack = { _, _ in
+            cell.cellCallBack = { data, type in
                 print("recommendCell to do")
             }
             cell.updateUI(with: recommendData, FoodType: FoodType)
@@ -183,15 +183,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.moreButtonBlock = {
                 print("supplement more to do")
             }
-            cell.cellCallBack = { _ in
+            cell.cellCallBack = { (data) in
                 print("supplemet cell to do")
             }
             cell.updateUI(with: homeData.nutritionalSupplement)
             return cell
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SuggesttCellID, for: indexPath) as! SuggestCollectionViewCell
-            cell.backgroundColor = .black
             cellAnimation(cell: cell, interval: 1)
+            cell.moreButtonBlock = {
+                print("suggest more to do")
+            }
+            cell.cellCallBack = { data in
+                print("suggestCell to do")
+            }
+            cell.updateUI(with: homeData.suggestSupplement)
             return cell
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PreferenceCellID, for: indexPath) as! PreferenceCollectionViewCell

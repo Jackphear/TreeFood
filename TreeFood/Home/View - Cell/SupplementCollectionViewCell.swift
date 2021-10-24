@@ -74,14 +74,16 @@ class SupplementViewController: UIViewController {
     var supplementCellID = "supplementCell"
     var data = [Supplement]()
 
-    lazy var collection: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        let collect = UICollectionView(frame: CGRect(x: -10, y: 0, width: CFWidth, height: 300.fit), collectionViewLayout: layout)
-        collect.backgroundColor = .clear
-        collect.dataSource = self
-        collect.delegate = self
-        collect.register(SupplementCell.self, forCellWithReuseIdentifier: supplementCellID)
-        return collect
+        let collectionView = UICollectionView(frame: CGRect(x: -10, y: 0, width: CFWidth, height: 300.fit), collectionViewLayout: layout)
+        // 禁止滑动
+        collectionView.isScrollEnabled = false
+        collectionView.backgroundColor = .clear
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(SupplementCell.self, forCellWithReuseIdentifier: supplementCellID)
+        return collectionView
     }()
 
     // MARK: - 公有方法
@@ -93,7 +95,7 @@ class SupplementViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(collection)
+        view.addSubview(collectionView)
     }
 
     // MARK: - 私有方法
