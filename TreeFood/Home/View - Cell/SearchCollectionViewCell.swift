@@ -64,6 +64,7 @@ class SearchCollectionViewCell: UICollectionViewCell {
 
     // MARK: - 公有方法
 
+    // 此方法无实际意义，只是为了保持cell的一致性
     public func updateUI(with data: [Dishes]) {
         self.data = data
         collectionView.reloadData()

@@ -26,7 +26,8 @@ class HomeBaseCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    //MARK: -控件初始化
+    // MARK: - 控件初始化
+
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "PingFangSC-Semibold", size: 20.fit)

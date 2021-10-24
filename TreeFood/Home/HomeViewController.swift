@@ -32,6 +32,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .black
         setUpUI()
+        setNaviBar()
+
         setUpData()
     }
 
@@ -61,7 +63,7 @@ class HomeViewController: UIViewController {
 
     // MARK: - 私有方法
 
-    func setUpUI() {
+    private func setUpUI() {
         view.backgroundColor = .white
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
@@ -72,7 +74,14 @@ class HomeViewController: UIViewController {
         }
     }
 
-    func setUpData() {
+    private func setNaviBar() {
+        navigation.bar.isHidden = true
+        navigation.bar.isShadowHidden = true
+        navigation.bar.alpha = 0
+        navigation.bar.statusBarStyle = .darkContent
+    }
+
+    private func setUpData() {
         // 文件路径
         let path = Bundle.main.path(forResource: "homeList", ofType: "json")
         // json转NSData
@@ -155,22 +164,29 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                     print("searchCell to do")
                 }
             }
+            cell.updateUI(with: homeData.dishes)
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCellID, for: indexPath) as! RecommendCollectionViewCell
-            cell.updateUI(with: recommendData, FoodType: FoodType)
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = { ()
                 print("推荐更多 to do")
             }
-            cell.cellCallBack = { (data, type) in
+            cell.cellCallBack = { _, _ in
                 print("recommendCell to do")
             }
+            cell.updateUI(with: recommendData, FoodType: FoodType)
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SupplementCellID, for: indexPath) as! SupplementCollectionViewCell
-            cell.backgroundColor = .black
-            cellAnimation(cell: cell, interval: 1)
+            cellAnimation(cell: cell, interval: 0.25)
+            cell.moreButtonBlock = {
+                print("supplement more to do")
+            }
+            cell.cellCallBack = { _ in
+                print("supplemet cell to do")
+            }
+            cell.updateUI(with: homeData.nutritionalSupplement)
             return cell
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SuggesttCellID, for: indexPath) as! SuggestCollectionViewCell

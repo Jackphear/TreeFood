@@ -27,7 +27,7 @@ class RecommendCollectionViewCell: HomeBaseCollectionViewCell {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.register(DayRecommendCell.self, forCellWithReuseIdentifier: recommendCellID)
+        collectionView.register(RecommendCell.self, forCellWithReuseIdentifier: recommendCellID)
         return collectionView
     }()
 
@@ -69,7 +69,7 @@ extension RecommendCollectionViewCell: UICollectionViewDelegate, UICollectionVie
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: recommendCellID, for: indexPath) as! DayRecommendCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: recommendCellID, for: indexPath) as! RecommendCell
         cell.updateUI(with: data[indexPath.row])
         return cell
     }
@@ -82,19 +82,18 @@ extension RecommendCollectionViewCell: UICollectionViewDelegate, UICollectionVie
 }
 
 extension RecommendCollectionViewCell: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165.fit, height: 250.fit)
     }
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10.fit
     }
 }
 
 // MARK: - 列表cell
-class DayRecommendCell: UICollectionViewCell {
+
+class RecommendCell: UICollectionViewCell {
     public func updateUI(with data: Dish) {
         nameLabel.text = data.name
         materialslabel.text = data.description
