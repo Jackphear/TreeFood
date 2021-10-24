@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView.automaticallyAdjustsScrollIndicatorInsets = false
         view.backgroundColor = .black
         setUpUI()
         setNaviBar()
@@ -170,7 +171,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCellID, for: indexPath) as! RecommendCollectionViewCell
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = { ()
-                print("推荐更多 to do")
+                let vc = MoreDishViewController()
+                vc.updateUI(with: self.recommendData, types: self.FoodType)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { data, type in
                 print("recommendCell to do")
@@ -203,7 +206,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PreferenceCellID, for: indexPath) as! PreferenceCollectionViewCell
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
-                print("preference more to do")
+                let vc = MoreDishViewController()
+                vc.updateUI(with: self.recommendData, types: self.FoodType)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { (data, type) in
                 switch type {

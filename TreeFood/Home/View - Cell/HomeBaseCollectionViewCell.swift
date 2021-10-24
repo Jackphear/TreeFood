@@ -11,7 +11,7 @@ class HomeBaseCollectionViewCell: UICollectionViewCell {
     private let TopSpacing = 14.fit
 
     // 更多按钮回调
-    public var moreButtonBlock: (() -> Void)?
+    public var moreButtonBlock: (() -> ())?
 
     public func updateUI(with text: String) {
         titleLabel.text = text

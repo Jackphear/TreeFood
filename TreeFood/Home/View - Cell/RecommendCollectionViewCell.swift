@@ -11,7 +11,7 @@ class RecommendCollectionViewCell: HomeBaseCollectionViewCell {
     // MARK: - 公有属性
 
     public var cellCallBack: ((Dish, Species) -> Void)?
-
+    
     // MARK: - 私有属性
 
     private var data = [Dish]()
@@ -83,7 +83,7 @@ extension RecommendCollectionViewCell: UICollectionViewDelegate, UICollectionVie
 
 extension RecommendCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 165.fit, height: 250.fit)
+        return CGSize(width: 165.fit, height: 246.fit)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
