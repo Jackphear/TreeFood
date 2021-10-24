@@ -190,7 +190,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SuggesttCellID, for: indexPath) as! SuggestCollectionViewCell
-            cellAnimation(cell: cell, interval: 1)
+            cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
                 print("suggest more to do")
             }
@@ -201,8 +201,23 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PreferenceCellID, for: indexPath) as! PreferenceCollectionViewCell
-            cell.backgroundColor = .black
-            cellAnimation(cell: cell, interval: 1)
+            cellAnimation(cell: cell, interval: 0.25)
+            cell.moreButtonBlock = {
+                print("preference more to do")
+            }
+            cell.cellCallBack = { (data, type) in
+                switch type {
+                case .Breakfast:
+                    print("preferencecell to do")
+                case .Launch:
+                    print("preferencecell to do")
+                case .Dinner:
+                    print("preferencecell to do")
+                case .Snacks:
+                    print("preferencecell to do")
+                }
+            }
+            cell.updateUI(with: recommendData, FoodType: FoodType)
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PreferenceCellID, for: indexPath) as! PreferenceCollectionViewCell
