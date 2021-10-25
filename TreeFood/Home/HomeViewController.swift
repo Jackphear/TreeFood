@@ -192,7 +192,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SupplementCellID, for: indexPath) as! SupplementCollectionViewCell
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
-                print("supplement more to do")
+                let vc = MoreSupplementViewController()
+                vc.updatUI(with: self.supplements)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { (data) in
                 print("supplemet cell to do")
@@ -203,7 +205,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SuggesttCellID, for: indexPath) as! SuggestCollectionViewCell
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
-                print("suggest more to do")
+                let vc = MoreSupplementViewController()
+                vc.updatUI(with: self.supplements)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { data in
                 print("suggestCell to do")

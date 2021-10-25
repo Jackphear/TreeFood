@@ -19,6 +19,7 @@
 		93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */; };
 		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
 		936B49A7272680C90017D069 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A6272680C90017D069 /* DishViewController.swift */; };
+		936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A82726889A0017D069 /* MoreSupplementViewController.swift */; };
 		9389083827217AB0001897AF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389083727217AB0001897AF /* HomeModel.swift */; };
 		938BC9842724FC5C00C78AE8 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC9832724FC5C00C78AE8 /* SupplementCell.swift */; };
 		938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC98B2725718900C78AE8 /* MoreDishViewController.swift */; };
@@ -73,6 +74,7 @@
 		93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		936B49A6272680C90017D069 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
+		936B49A82726889A0017D069 /* MoreSupplementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSupplementViewController.swift; sourceTree = "<group>"; };
 		9389083727217AB0001897AF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		938BC9832724FC5C00C78AE8 /* SupplementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementCell.swift; sourceTree = "<group>"; };
 		938BC98B2725718900C78AE8 /* MoreDishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDishViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				938BC98B2725718900C78AE8 /* MoreDishViewController.swift */,
 				936B49A6272680C90017D069 /* DishViewController.swift */,
+				936B49A82726889A0017D069 /* MoreSupplementViewController.swift */,
 			);
 			path = "Home - Two";
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */,
 				93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */,
 				93449AC3271EA1A00094AA60 /* BarContentView.swift in Sources */,
+				936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */,
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				936B49A7272680C90017D069 /* DishViewController.swift in Sources */,
