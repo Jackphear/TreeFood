@@ -156,13 +156,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.cellCallBack = { type in
                 switch type {
                 case .Breakfast:
-                    print("searchCell to do")
+                    let vc = DishViewController()
+                    vc.updateUI(with: self.homeData.dishes[0], type: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 case .Launch:
-                    print("searchCell to do")
+                    let vc = DishViewController()
+                    vc.updateUI(with: self.homeData.dishes[1], type: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 case .Dinner:
-                    print("searchCell to do")
+                    let vc = DishViewController()
+                    vc.updateUI(with: self.homeData.dishes[2], type: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 case .Snacks:
-                    print("searchCell to do")
+                    let vc = DishViewController()
+                    vc.updateUI(with: self.homeData.dishes[3], type: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
             cell.updateUI(with: homeData.dishes)
