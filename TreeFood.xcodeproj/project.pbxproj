@@ -32,6 +32,7 @@
 		93981C0F271E682600EB1003 /* TreeFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C0E271E682600EB1003 /* TreeFoodTests.swift */; };
 		93981C19271E682600EB1003 /* TreeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C18271E682600EB1003 /* TreeFoodUITests.swift */; };
 		93981C1B271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */; };
+		939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D160E27298B5A00E02F8D /* DishDetailViewController.swift */; };
 		93E543E8271FD90F00E6DE66 /* record.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E5271FD90F00E6DE66 /* record.json */; };
 		93E543E9271FD90F00E6DE66 /* homeList.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E6271FD90F00E6DE66 /* homeList.json */; };
 		93E543EA271FD90F00E6DE66 /* add.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E7271FD90F00E6DE66 /* add.json */; };
@@ -91,6 +92,7 @@
 		93981C14271E682600EB1003 /* TreeFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981C18271E682600EB1003 /* TreeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITests.swift; sourceTree = "<group>"; };
 		93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		939D160E27298B5A00E02F8D /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		93E543E5271FD90F00E6DE66 /* record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record.json; sourceTree = "<group>"; };
 		93E543E6271FD90F00E6DE66 /* homeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeList.json; sourceTree = "<group>"; };
 		93E543E7271FD90F00E6DE66 /* add.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add.json; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				938BC98B2725718900C78AE8 /* MoreDishViewController.swift */,
 				936B49A6272680C90017D069 /* DishViewController.swift */,
 				936B49A82726889A0017D069 /* MoreSupplementViewController.swift */,
+				939D160E27298B5A00E02F8D /* DishDetailViewController.swift */,
 			);
 			path = "Home - Two";
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				938BC9842724FC5C00C78AE8 /* SupplementCell.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
 				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
+				939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */,
 				93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
