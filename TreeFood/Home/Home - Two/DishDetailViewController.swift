@@ -14,6 +14,8 @@ class DishDetailViewController: UIViewController {
     
     //MARK: -私有属性
     
+    
+    private var data = Dish()
     private var viewScroll = true
     private var foodType = [Species]()
     
@@ -80,6 +82,7 @@ class DishDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addButton()
         configNavbar()
         configUI()
         self.scrollView.contentSize = CGSize(width: CFWidth, height: CFHeight + 200)
@@ -90,7 +93,9 @@ class DishDetailViewController: UIViewController {
     
     public func updateUI(with data:Dish, types:[Species]) {
         dishView.updateUI(with: data)
+        self.data = data
         self.foodType = types
+        self.backImageView.image = UIImage(named: data.image)
     }
 
     //MARK: -私有方法
@@ -132,7 +137,7 @@ class DishDetailViewController: UIViewController {
     
     func addButton(){
         dishView.buttonBlock = {
-            
+            print("addbutton")
         }
     }
 
@@ -156,6 +161,7 @@ extension DishDetailViewController: UIScrollViewDelegate {
                 scrollView.contentOffset.y = maxOffset
                 viewScroll = false
                 dishView.tableScroll = true
+                
             }
         }
     }
