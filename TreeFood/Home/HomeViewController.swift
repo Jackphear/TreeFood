@@ -186,7 +186,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { data, type in
-                print("recommendCell to do")
+                let vc = DishDetailViewController()
+                vc.updateUI(with: data, types: type)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.updateUI(with: recommendData, FoodType: FoodType)
             return cell

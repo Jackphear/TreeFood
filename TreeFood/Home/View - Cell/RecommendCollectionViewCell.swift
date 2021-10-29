@@ -10,7 +10,7 @@ import UIKit
 class RecommendCollectionViewCell: HomeBaseCollectionViewCell {
     // MARK: - 公有属性
 
-    public var cellCallBack: ((Dish, Species) -> Void)?
+    public var cellCallBack: ((Dish, [Species]) -> Void)?
     
     // MARK: - 私有属性
 
@@ -76,7 +76,7 @@ extension RecommendCollectionViewCell: UICollectionViewDelegate, UICollectionVie
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let callback = cellCallBack {
-            callback(data[indexPath.row], FoodType[indexPath.row])
+            callback(data[indexPath.row], FoodType)
         }
     }
 }
