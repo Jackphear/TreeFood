@@ -182,7 +182,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = { ()
                 let vc = MoreDishViewController()
-                vc.updateUI(with: self.recommendData, types: self.FoodType)
+                vc.updateUI(with: self.recommendData, types: self.FoodType, title: "每日推荐")
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { data, type in
@@ -197,11 +197,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
                 let vc = MoreSupplementViewController()
-                vc.updatUI(with: self.supplements)
+                vc.updatUI(with: self.supplements, title: "营养补给")
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { (data) in
-                print("supplemet cell to do")
+                let vc = SupplementDetailViewController()
+                vc.updateUI(with: data)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.updateUI(with: homeData.nutritionalSupplement)
             return cell
@@ -210,11 +212,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
                 let vc = MoreSupplementViewController()
-                vc.updatUI(with: self.supplements)
+                vc.updatUI(with: self.supplements, title: "建议补充")
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { data in
-                print("suggestCell to do")
+                let vc = SupplementDetailViewController()
+                vc.updateUI(with: data)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.updateUI(with: homeData.suggestSupplement)
             return cell
@@ -223,19 +227,27 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
                 let vc = MoreDishViewController()
-                vc.updateUI(with: self.recommendData, types: self.FoodType)
+                vc.updateUI(with: self.recommendData, types: self.FoodType, title: "最近偏爱")
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { (data, type) in
                 switch type {
                 case .Breakfast:
-                    print("preferencecell to do")
+                    let vc = DishDetailViewController()
+                    vc.updateUI(with: data, types: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 case .Launch:
-                    print("preferencecell to do")
+                    let vc = DishDetailViewController()
+                    vc.updateUI(with: data, types: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 case .Dinner:
-                    print("preferencecell to do")
+                    let vc = DishDetailViewController()
+                    vc.updateUI(with: data, types: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 case .Snacks:
-                    print("preferencecell to do")
+                    let vc = DishDetailViewController()
+                    vc.updateUI(with: data, types: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
             cell.updateUI(with: recommendData, FoodType: FoodType)

@@ -70,7 +70,9 @@ extension DishViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("dishCell to do")
+        let vc = DishDetailViewController()
+        vc.updateUI(with: data.content[indexPath.row], types: foodType)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

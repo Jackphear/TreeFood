@@ -17,7 +17,7 @@ class DishDetailViewController: UIViewController {
     
     private var data = Dish()
     private var viewScroll = true
-    private var foodType = [Species]()
+    private var foodType = Species.Breakfast
     
     private lazy var scrollView: bottomScrollView = {
         let view = bottomScrollView()
@@ -91,7 +91,7 @@ class DishDetailViewController: UIViewController {
         }
     }
     
-    public func updateUI(with data:Dish, types:[Species]) {
+    public func updateUI(with data:Dish, types:Species) {
         dishView.updateUI(with: data)
         self.data = data
         self.foodType = types
@@ -131,7 +131,7 @@ class DishDetailViewController: UIViewController {
             make.top.equalTo(backImageView.snp.bottom).offset(-15)
             make.left.equalToSuperview()
             make.width.equalTo(CFWidth)
-            make.height.equalTo(CFHeight)
+            make.height.equalTo(CFHeight - 100)
         }
     }
     
@@ -153,7 +153,7 @@ class DishDetailViewController: UIViewController {
 
 extension DishDetailViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let maxOffset: CGFloat = 300
+        let maxOffset: CGFloat = 250
         if !viewScroll {
             scrollView.contentOffset.y = maxOffset
         } else {
@@ -161,8 +161,11 @@ extension DishDetailViewController: UIScrollViewDelegate {
                 scrollView.contentOffset.y = maxOffset
                 viewScroll = false
                 dishView.tableScroll = true
-                
             }
+        }
+        //当table不够长时保证能够向上滑回
+        if !viewScroll && dishView.tableScroll && dishView.ingredientsTableView.contentOffset.y == 0{
+            viewScroll = true
         }
     }
 }

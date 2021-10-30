@@ -32,16 +32,17 @@ class MoreDishViewController: UIViewController {
 
     // MARK: - 公有方法
 
-    public func updateUI(with data: [Dish], types: [Species]) {
+    public func updateUI(with data: [Dish], types: [Species], title:String) {
         self.data = data
         self.foodType = types
+        self.navigation.item.title = title
         self.collectionView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configUI()
         configNavbar()
+        configUI()
     }
 
     // MARK: - 私有方法
@@ -60,7 +61,6 @@ class MoreDishViewController: UIViewController {
     private func configNavbar() {
         self.navigation.bar.isShadowHidden = true
         self.navigation.bar.alpha = 0
-        self.navigation.item.title = "每日推荐"
     }
 }
 
@@ -77,7 +77,9 @@ extension MoreDishViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("moredishcell to do")
+        let vc = DishDetailViewController()
+        vc.updateUI(with: data[indexPath.row], types: foodType[indexPath.row])
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

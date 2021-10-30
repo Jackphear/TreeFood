@@ -35,9 +35,10 @@ class MoreSupplementViewController: UIViewController {
         configureNavigation()
     }
     
-    public func updatUI(with data: [Supplement]) {
+    public func updatUI(with data: [Supplement], title:String) {
         self.data = data
         tableView.reloadData()
+        navigation.item.title = title
     }
 
     // MARK: - 私有方法
@@ -56,7 +57,7 @@ class MoreSupplementViewController: UIViewController {
     private func configureNavigation() {
         self.navigation.bar.isShadowHidden = true
         self.navigation.bar.alpha = 0
-        navigation.item.title = "营养补剂"
+        
     }
 }
 
@@ -72,6 +73,12 @@ extension MoreSupplementViewController: UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = SupplementDetailViewController()
+
+        vc.updateUI(with: data[indexPath.row])
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 

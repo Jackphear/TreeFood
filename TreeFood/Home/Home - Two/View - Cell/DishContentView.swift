@@ -69,8 +69,8 @@ class DishContentView: UIView {
         label.attributedText = attrString
         return label
     }()
-    
-    private lazy var ingredientsTableView: UITableView = {
+    //监听滑动
+    lazy var ingredientsTableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .clear
         tableView.delegate = self

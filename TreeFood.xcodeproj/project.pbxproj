@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E91D6DE25A7A3EC13650861 /* Pods_TreeFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5273B4DA82728CEB79516E72 /* Pods_TreeFood.framework */; };
+		9311F589272D21E900610838 /* SupplementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311F588272D21E900610838 /* SupplementDetailViewController.swift */; };
 		931C2660272B828300EACD31 /* DishContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C265F272B828300EACD31 /* DishContentView.swift */; };
 		931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C2661272B85C400EACD31 /* ingredientsCell.swift */; };
 		93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AAB271E722F0094AA60 /* HomeViewController.swift */; };
@@ -23,7 +24,6 @@
 		936B49A7272680C90017D069 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A6272680C90017D069 /* DishViewController.swift */; };
 		936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A82726889A0017D069 /* MoreSupplementViewController.swift */; };
 		9389083827217AB0001897AF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389083727217AB0001897AF /* HomeModel.swift */; };
-		938BC9842724FC5C00C78AE8 /* SupplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC9832724FC5C00C78AE8 /* SupplementCell.swift */; };
 		938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC98B2725718900C78AE8 /* MoreDishViewController.swift */; };
 		93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF7271E682000EB1003 /* AppDelegate.swift */; };
 		93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF9271E682000EB1003 /* SceneDelegate.swift */; };
@@ -66,6 +66,7 @@
 /* Begin PBXFileReference section */
 		1AA3784D92CF15B6DDB5F620 /* Pods-TreeFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeFood.release.xcconfig"; path = "Target Support Files/Pods-TreeFood/Pods-TreeFood.release.xcconfig"; sourceTree = "<group>"; };
 		5273B4DA82728CEB79516E72 /* Pods_TreeFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreeFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9311F588272D21E900610838 /* SupplementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementDetailViewController.swift; sourceTree = "<group>"; };
 		931C265F272B828300EACD31 /* DishContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishContentView.swift; sourceTree = "<group>"; };
 		931C2661272B85C400EACD31 /* ingredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientsCell.swift; sourceTree = "<group>"; };
 		93449AAB271E722F0094AA60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		936B49A6272680C90017D069 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 		936B49A82726889A0017D069 /* MoreSupplementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSupplementViewController.swift; sourceTree = "<group>"; };
 		9389083727217AB0001897AF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		938BC9832724FC5C00C78AE8 /* SupplementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementCell.swift; sourceTree = "<group>"; };
 		938BC98B2725718900C78AE8 /* MoreDishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDishViewController.swift; sourceTree = "<group>"; };
 		93981BF4271E682000EB1003 /* TreeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981BF7271E682000EB1003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +144,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9311F587272D21C000610838 /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+				931C2661272B85C400EACD31 /* ingredientsCell.swift */,
+				931C265F272B828300EACD31 /* DishContentView.swift */,
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
 		93449AA5271E71320094AA60 /* Analyze */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,12 +185,12 @@
 		93449AA8271E71ED0094AA60 /* Home - Two */ = {
 			isa = PBXGroup;
 			children = (
+				9311F587272D21C000610838 /* View - Cell */,
 				938BC98B2725718900C78AE8 /* MoreDishViewController.swift */,
+				9311F588272D21E900610838 /* SupplementDetailViewController.swift */,
 				936B49A6272680C90017D069 /* DishViewController.swift */,
 				936B49A82726889A0017D069 /* MoreSupplementViewController.swift */,
 				939D160E27298B5A00E02F8D /* DishDetailViewController.swift */,
-				931C265F272B828300EACD31 /* DishContentView.swift */,
-				931C2661272B85C400EACD31 /* ingredientsCell.swift */,
 			);
 			path = "Home - Two";
 			sourceTree = "<group>";
@@ -201,7 +210,6 @@
 				93E543ED271FECDC00E6DE66 /* SearchCollectionViewCell.swift */,
 				93E543EF271FECF000E6DE66 /* RecommendCollectionViewCell.swift */,
 				93E543F1271FED1000E6DE66 /* SupplementCollectionViewCell.swift */,
-				938BC9832724FC5C00C78AE8 /* SupplementCell.swift */,
 				93E543F3271FED1F00E6DE66 /* SuggestCollectionViewCell.swift */,
 				93E543F5271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift */,
 			);
@@ -583,10 +591,10 @@
 				9389083827217AB0001897AF /* HomeModel.swift in Sources */,
 				938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */,
 				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
-				938BC9842724FC5C00C78AE8 /* SupplementCell.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
 				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
 				939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */,
+				9311F589272D21E900610838 /* SupplementDetailViewController.swift in Sources */,
 				93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */,
 				931C2660272B828300EACD31 /* DishContentView.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
