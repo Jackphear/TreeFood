@@ -124,21 +124,14 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let vc = DishDetailViewController()
-//        if self.searchController.isActive {
-//            vc.updateUI(with: resultData[indexPath.row], types: getType(name: resultData[indexPath.row].name))
-//        } else {
-//            vc.updateUI(with: data[indexPath.row], types: getType(name: data[indexPath.row].name))
-//        }
-//
-//        self.dismiss(animated: true) {
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-        if self.searchController.isActive {
-            cellCallBack!(resultData[indexPath.row], getType(name: resultData[indexPath.row].name))
-        } else {
-            cellCallBack!(data[indexPath.row], getType(name: data[indexPath.row].name))
+        self.searchController.dismiss(animated: true) {
+            if self.searchController.isActive {
+                self.cellCallBack!(self.resultData[indexPath.row], getType(name: self.resultData[indexPath.row].name))
+            } else {
+                self.cellCallBack!(self.data[indexPath.row], getType(name: self.data[indexPath.row].name))
+            }
         }
+        
     }
 }
 
