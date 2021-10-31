@@ -14,6 +14,8 @@ import SwiftyJSON
 //today is my birthday ,just for fun, fighting
 
 class HomeViewController: UIViewController {
+    
+    var homeData = HomeData()
     // MARK: - 私有属性
 
     fileprivate let SearchCellID = "SearchCollectionViewCell"
@@ -23,7 +25,8 @@ class HomeViewController: UIViewController {
     fileprivate let PreferenceCellID = "PreferenceCollectionViewCell"
     fileprivate let SectionHeadCellID = "SectionHeadCell"
 
-    private var homeData = HomeData()
+    
+    private var searchData = [Dish]()
     private var recommendData = [Dish]()
     private var supplements = [Supplement]()
     private var FoodType = [Species]()
@@ -92,6 +95,13 @@ class HomeViewController: UIViewController {
         // 解析json
         let json = JSON(jsonData!)
         homeData = JSONDeserializer<HomeData>.deserializeFrom(json: json["data"].description)!
+        
+        //搜索数据
+        for item in homeData.dishes {
+            for dish in item.content {
+                self.searchData.append(dish)
+            }
+        }
 
         // 营养补充
         for item in homeData.nutritionalSupplement {
@@ -153,7 +163,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCellID, for: indexPath) as! SearchCollectionViewCell
             cellAnimation(cell: cell, interval: 0.25)
             cell.searchCallBack = { ()
-                print("search to do")
+                let vc = SearchViewController()
+                vc.searchController.isActive = true
+                vc.updateUI(with: self.searchData)
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.cellCallBack = { data, type in
+                    let vc = DishDetailViewController()
+                    vc.updateUI(with: data, types: type)
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
             cell.cellCallBack = { type in
                 switch type {

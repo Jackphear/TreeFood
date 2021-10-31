@@ -11,6 +11,7 @@
 		9311F589272D21E900610838 /* SupplementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311F588272D21E900610838 /* SupplementDetailViewController.swift */; };
 		931C2660272B828300EACD31 /* DishContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C265F272B828300EACD31 /* DishContentView.swift */; };
 		931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C2661272B85C400EACD31 /* ingredientsCell.swift */; };
+		9325EEE4272EA835004ECF78 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325EEE3272EA834004ECF78 /* SearchViewController.swift */; };
 		93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AAB271E722F0094AA60 /* HomeViewController.swift */; };
 		93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB0271E729B0094AA60 /* MineViewController.swift */; };
 		93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB5271E72E60094AA60 /* RecordViewController.swift */; };
@@ -69,6 +70,7 @@
 		9311F588272D21E900610838 /* SupplementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementDetailViewController.swift; sourceTree = "<group>"; };
 		931C265F272B828300EACD31 /* DishContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishContentView.swift; sourceTree = "<group>"; };
 		931C2661272B85C400EACD31 /* ingredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientsCell.swift; sourceTree = "<group>"; };
+		9325EEE3272EA834004ECF78 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93449AAB271E722F0094AA60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		93449AB0271E729B0094AA60 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		93449AB5271E72E60094AA60 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				936B49A6272680C90017D069 /* DishViewController.swift */,
 				936B49A82726889A0017D069 /* MoreSupplementViewController.swift */,
 				939D160E27298B5A00E02F8D /* DishDetailViewController.swift */,
+				9325EEE3272EA834004ECF78 /* SearchViewController.swift */,
 			);
 			path = "Home - Two";
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
 				931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */,
+				9325EEE4272EA835004ECF78 /* SearchViewController.swift in Sources */,
 				93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */,
 				93449AC7271EA61D0094AA60 /* Const.swift in Sources */,
 				93E543F2271FED1000E6DE66 /* SupplementCollectionViewCell.swift in Sources */,
