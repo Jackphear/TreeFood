@@ -124,7 +124,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.searchController.dismiss(animated: true) {
+        
+        self.dismiss(animated: true) {
             if self.searchController.isActive {
                 self.cellCallBack!(self.resultData[indexPath.row], getType(name: self.resultData[indexPath.row].name))
             } else {

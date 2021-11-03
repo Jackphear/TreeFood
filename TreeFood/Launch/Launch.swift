@@ -29,7 +29,7 @@ func Launch() -> ESTabBarController {
     let recordNavi = BaseNavigationController(rootViewController: recordVC)
     let mineNavi = BaseNavigationController(rootViewController: mineVC)
     let analyzeNavi = BaseNavigationController(rootViewController: analyzeVC)
-    tabBarController.viewControllers = [homeNavi, recordNavi, addVC, mineNavi, analyzeNavi]
+    tabBarController.viewControllers = [homeNavi, recordNavi, addVC, analyzeNavi, mineNavi]
     
     UITabBar.appearance().isTranslucent = false
     UITabBar.appearance().tintColor = .white

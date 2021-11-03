@@ -235,7 +235,7 @@ class SupplementDetailViewController: UIViewController {
         
         backgroundImage.snp.makeConstraints { make in
             make.height.equalTo(400.fit)
-            make.width.equalTo(CFWidth.fit)
+            make.width.equalTo(CFWidth)
             make.left.equalToSuperview()
             make.top.equalToSuperview()
         }
@@ -249,7 +249,7 @@ class SupplementDetailViewController: UIViewController {
         backgroundView.snp.makeConstraints { make in
             make.left.equalToSuperview()
             make.top.equalToSuperview().offset(280.fit)
-            make.width.equalTo(CFWidth.fit)
+            make.width.equalTo(CFWidth  )
             make.height.equalTo(400.fit)
         }
         
