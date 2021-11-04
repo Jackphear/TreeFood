@@ -22,6 +22,9 @@
 		93449AC7271EA61D0094AA60 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC6271EA61D0094AA60 /* Const.swift */; };
 		93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */; };
 		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
+		9347ED1A273375E6002C43A2 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347ED19273375E5002C43A2 /* EditViewController.swift */; };
+		9347ED1C27337C16002C43A2 /* EditBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347ED1B27337C16002C43A2 /* EditBodyTableViewCell.swift */; };
+		9347ED1E27337C23002C43A2 /* EditHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347ED1D27337C23002C43A2 /* EditHeadTableViewCell.swift */; };
 		936841FA273263CE00404810 /* MIneBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936841F9273263CE00404810 /* MIneBodyTableViewCell.swift */; };
 		936841FC273263DF00404810 /* MineHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936841FB273263DF00404810 /* MineHeadTableViewCell.swift */; };
 		936841FE273263FA00404810 /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936841FD273263FA00404810 /* MineModel.swift */; };
@@ -84,6 +87,9 @@
 		93449AC6271EA61D0094AA60 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		9347ED19273375E5002C43A2 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		9347ED1B27337C16002C43A2 /* EditBodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBodyTableViewCell.swift; sourceTree = "<group>"; };
+		9347ED1D27337C23002C43A2 /* EditHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeadTableViewCell.swift; sourceTree = "<group>"; };
 		936841F9273263CE00404810 /* MIneBodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIneBodyTableViewCell.swift; sourceTree = "<group>"; };
 		936841FB273263DF00404810 /* MineHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeadTableViewCell.swift; sourceTree = "<group>"; };
 		936841FD273263FA00404810 /* MineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
@@ -228,6 +234,9 @@
 		93449AAD271E72570094AA60 /* Mine - Two */ = {
 			isa = PBXGroup;
 			children = (
+				9347ED19273375E5002C43A2 /* EditViewController.swift */,
+				9347ED1D27337C23002C43A2 /* EditHeadTableViewCell.swift */,
+				9347ED1B27337C16002C43A2 /* EditBodyTableViewCell.swift */,
 			);
 			path = "Mine - Two";
 			sourceTree = "<group>";
@@ -604,16 +613,19 @@
 				936841FC273263DF00404810 /* MineHeadTableViewCell.swift in Sources */,
 				9389083827217AB0001897AF /* HomeModel.swift in Sources */,
 				938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */,
+				9347ED1C27337C16002C43A2 /* EditBodyTableViewCell.swift in Sources */,
 				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
 				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
 				939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */,
+				9347ED1E27337C23002C43A2 /* EditHeadTableViewCell.swift in Sources */,
 				936841FA273263CE00404810 /* MIneBodyTableViewCell.swift in Sources */,
 				9311F589272D21E900610838 /* SupplementDetailViewController.swift in Sources */,
 				93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */,
 				931C2660272B828300EACD31 /* DishContentView.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
+				9347ED1A273375E6002C43A2 /* EditViewController.swift in Sources */,
 				931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */,
 				9325EEE4272EA835004ECF78 /* SearchViewController.swift in Sources */,
 				93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */,

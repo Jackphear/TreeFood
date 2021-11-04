@@ -200,7 +200,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = { ()
                 let vc = MoreDishViewController()
-                vc.updateUI(with: self.recommendData, types: self.FoodType, title: "每日推荐")
+                vc.updateUI(with: self.recommendData, title: "每日推荐")
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { data, type in
@@ -245,7 +245,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cellAnimation(cell: cell, interval: 0.25)
             cell.moreButtonBlock = {
                 let vc = MoreDishViewController()
-                vc.updateUI(with: self.recommendData, types: self.FoodType, title: "最近偏爱")
+                vc.updateUI(with: self.recommendData, title: "最近偏爱")
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             cell.cellCallBack = { (data, type) in

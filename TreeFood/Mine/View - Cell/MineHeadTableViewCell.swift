@@ -8,7 +8,9 @@
 import UIKit
 
 class MineHeadTableViewCell: UITableViewCell {
-    // MARK: -
+    // MARK: -公有属性
+    
+    var cellCallBack:((UIImage) -> ())?
 
     // MARK: - 私有属性
 
@@ -79,6 +81,7 @@ class MineHeadTableViewCell: UITableViewCell {
             self.userImg.image = dataImage
         }else {
             self.userImg.image = UIImage(named: "mine_img_header")
+            cellCallBack?(self.userImg.image!)
         }
         self.userName.text = data.userName
         self.weightLabel.text = data.weight

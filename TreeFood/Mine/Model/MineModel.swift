@@ -15,4 +15,5 @@ struct MineModel: HandyJSON {
     var sex = ""
     var weight = ""
     var height = ""
+    var birthday = ""
 }

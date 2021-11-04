@@ -32,9 +32,8 @@ class MoreDishViewController: UIViewController {
 
     // MARK: - 公有方法
 
-    public func updateUI(with data: [Dish], types: [Species], title:String) {
+    public func updateUI(with data: [Dish], title:String) {
         self.data = data
-        self.foodType = types
         self.navigation.item.title = title
         self.collectionView.reloadData()
     }
@@ -78,7 +77,7 @@ extension MoreDishViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DishDetailViewController()
-        vc.updateUI(with: data[indexPath.row], types: foodType[indexPath.row])
+        vc.updateUI(with: data[indexPath.row], types: getType(name: data[indexPath.row].name))
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
