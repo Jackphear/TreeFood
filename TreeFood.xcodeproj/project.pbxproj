@@ -13,7 +13,6 @@
 		931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C2661272B85C400EACD31 /* ingredientsCell.swift */; };
 		9325EEE4272EA835004ECF78 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325EEE3272EA834004ECF78 /* SearchViewController.swift */; };
 		93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AAB271E722F0094AA60 /* HomeViewController.swift */; };
-		93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB0271E729B0094AA60 /* MineViewController.swift */; };
 		93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AB5271E72E60094AA60 /* RecordViewController.swift */; };
 		93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABA271E73630094AA60 /* AnalyzeViewController.swift */; };
 		93449ABE271E740E0094AA60 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ABD271E740E0094AA60 /* Launch.swift */; };
@@ -22,12 +21,6 @@
 		93449AC7271EA61D0094AA60 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC6271EA61D0094AA60 /* Const.swift */; };
 		93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */; };
 		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
-		9347ED1A273375E6002C43A2 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347ED19273375E5002C43A2 /* EditViewController.swift */; };
-		9347ED1C27337C16002C43A2 /* EditBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347ED1B27337C16002C43A2 /* EditBodyTableViewCell.swift */; };
-		9347ED1E27337C23002C43A2 /* EditHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347ED1D27337C23002C43A2 /* EditHeadTableViewCell.swift */; };
-		936841FA273263CE00404810 /* MIneBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936841F9273263CE00404810 /* MIneBodyTableViewCell.swift */; };
-		936841FC273263DF00404810 /* MineHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936841FB273263DF00404810 /* MineHeadTableViewCell.swift */; };
-		936841FE273263FA00404810 /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936841FD273263FA00404810 /* MineModel.swift */; };
 		936B49A7272680C90017D069 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A6272680C90017D069 /* DishViewController.swift */; };
 		936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A82726889A0017D069 /* MoreSupplementViewController.swift */; };
 		9389083827217AB0001897AF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389083727217AB0001897AF /* HomeModel.swift */; };
@@ -42,6 +35,13 @@
 		93981C19271E682600EB1003 /* TreeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C18271E682600EB1003 /* TreeFoodUITests.swift */; };
 		93981C1B271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */; };
 		939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D160E27298B5A00E02F8D /* DishDetailViewController.swift */; };
+		93A9B2A72734061C00135EBB /* MineHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B29E2734061C00135EBB /* MineHeadTableViewCell.swift */; };
+		93A9B2A82734061C00135EBB /* MIneBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B29F2734061C00135EBB /* MIneBodyTableViewCell.swift */; };
+		93A9B2A92734061C00135EBB /* EditBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B2A12734061C00135EBB /* EditBodyTableViewCell.swift */; };
+		93A9B2AA2734061C00135EBB /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B2A22734061C00135EBB /* EditViewController.swift */; };
+		93A9B2AB2734061C00135EBB /* EditHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B2A32734061C00135EBB /* EditHeadTableViewCell.swift */; };
+		93A9B2AC2734061C00135EBB /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B2A42734061C00135EBB /* MineViewController.swift */; };
+		93A9B2AD2734061C00135EBB /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B2A62734061C00135EBB /* MineModel.swift */; };
 		93E543E8271FD90F00E6DE66 /* record.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E5271FD90F00E6DE66 /* record.json */; };
 		93E543E9271FD90F00E6DE66 /* homeList.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E6271FD90F00E6DE66 /* homeList.json */; };
 		93E543EA271FD90F00E6DE66 /* add.json in Resources */ = {isa = PBXBuildFile; fileRef = 93E543E7271FD90F00E6DE66 /* add.json */; };
@@ -78,7 +78,6 @@
 		931C2661272B85C400EACD31 /* ingredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredientsCell.swift; sourceTree = "<group>"; };
 		9325EEE3272EA834004ECF78 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93449AAB271E722F0094AA60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		93449AB0271E729B0094AA60 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		93449AB5271E72E60094AA60 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		93449ABA271E73630094AA60 /* AnalyzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		93449ABD271E740E0094AA60 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
@@ -87,12 +86,6 @@
 		93449AC6271EA61D0094AA60 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		9347ED19273375E5002C43A2 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		9347ED1B27337C16002C43A2 /* EditBodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBodyTableViewCell.swift; sourceTree = "<group>"; };
-		9347ED1D27337C23002C43A2 /* EditHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeadTableViewCell.swift; sourceTree = "<group>"; };
-		936841F9273263CE00404810 /* MIneBodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIneBodyTableViewCell.swift; sourceTree = "<group>"; };
-		936841FB273263DF00404810 /* MineHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeadTableViewCell.swift; sourceTree = "<group>"; };
-		936841FD273263FA00404810 /* MineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
 		936B49A6272680C90017D069 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 		936B49A82726889A0017D069 /* MoreSupplementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSupplementViewController.swift; sourceTree = "<group>"; };
 		9389083727217AB0001897AF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
@@ -111,6 +104,13 @@
 		93981C18271E682600EB1003 /* TreeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITests.swift; sourceTree = "<group>"; };
 		93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		939D160E27298B5A00E02F8D /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		93A9B29E2734061C00135EBB /* MineHeadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeadTableViewCell.swift; sourceTree = "<group>"; };
+		93A9B29F2734061C00135EBB /* MIneBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIneBodyTableViewCell.swift; sourceTree = "<group>"; };
+		93A9B2A12734061C00135EBB /* EditBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBodyTableViewCell.swift; sourceTree = "<group>"; };
+		93A9B2A22734061C00135EBB /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		93A9B2A32734061C00135EBB /* EditHeadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHeadTableViewCell.swift; sourceTree = "<group>"; };
+		93A9B2A42734061C00135EBB /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		93A9B2A62734061C00135EBB /* MineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
 		93E543E5271FD90F00E6DE66 /* record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record.json; sourceTree = "<group>"; };
 		93E543E6271FD90F00E6DE66 /* homeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeList.json; sourceTree = "<group>"; };
 		93E543E7271FD90F00E6DE66 /* add.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add.json; sourceTree = "<group>"; };
@@ -231,33 +231,6 @@
 			path = "View - Cell";
 			sourceTree = "<group>";
 		};
-		93449AAD271E72570094AA60 /* Mine - Two */ = {
-			isa = PBXGroup;
-			children = (
-				9347ED19273375E5002C43A2 /* EditViewController.swift */,
-				9347ED1D27337C23002C43A2 /* EditHeadTableViewCell.swift */,
-				9347ED1B27337C16002C43A2 /* EditBodyTableViewCell.swift */,
-			);
-			path = "Mine - Two";
-			sourceTree = "<group>";
-		};
-		93449AAE271E72680094AA60 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				936841FD273263FA00404810 /* MineModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		93449AAF271E72760094AA60 /* View - Cell */ = {
-			isa = PBXGroup;
-			children = (
-				936841F9273263CE00404810 /* MIneBodyTableViewCell.swift */,
-				936841FB273263DF00404810 /* MineHeadTableViewCell.swift */,
-			);
-			path = "View - Cell";
-			sourceTree = "<group>";
-		};
 		93449AB2271E72B50094AA60 /* Record - Two */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,13 +314,13 @@
 				93981BF9271E682000EB1003 /* SceneDelegate.swift */,
 				93981BFB271E682000EB1003 /* ViewController.swift */,
 				93981C00271E682500EB1003 /* Assets.xcassets */,
+				93A9B29C2734061C00135EBB /* Mine */,
 				93449AA6271E71540094AA60 /* Extension+Const */,
 				93449AA7271E71C70094AA60 /* Add */,
 				93449AA5271E71320094AA60 /* Analyze */,
 				93E543E4271FD8CF00E6DE66 /* Data */,
 				93BE47FF271E7013001ED671 /* Home */,
 				93449ABC271E73940094AA60 /* Launch */,
-				93BE4800271E701C001ED671 /* Mine */,
 				93BE4801271E7025001ED671 /* Record */,
 			);
 			path = TreeFood;
@@ -370,6 +343,44 @@
 			path = TreeFoodUITests;
 			sourceTree = "<group>";
 		};
+		93A9B29C2734061C00135EBB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				93A9B29D2734061C00135EBB /* View - Cell */,
+				93A9B2A02734061C00135EBB /* Mine - Two */,
+				93A9B2A42734061C00135EBB /* MineViewController.swift */,
+				93A9B2A52734061C00135EBB /* Model */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		93A9B29D2734061C00135EBB /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93A9B29E2734061C00135EBB /* MineHeadTableViewCell.swift */,
+				93A9B29F2734061C00135EBB /* MIneBodyTableViewCell.swift */,
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
+		93A9B2A02734061C00135EBB /* Mine - Two */ = {
+			isa = PBXGroup;
+			children = (
+				93A9B2A12734061C00135EBB /* EditBodyTableViewCell.swift */,
+				93A9B2A22734061C00135EBB /* EditViewController.swift */,
+				93A9B2A32734061C00135EBB /* EditHeadTableViewCell.swift */,
+			);
+			path = "Mine - Two";
+			sourceTree = "<group>";
+		};
+		93A9B2A52734061C00135EBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93A9B2A62734061C00135EBB /* MineModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		93BE47FF271E7013001ED671 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,17 +390,6 @@
 				93449AAB271E722F0094AA60 /* HomeViewController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		93BE4800271E701C001ED671 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				93449AAF271E72760094AA60 /* View - Cell */,
-				93449AAE271E72680094AA60 /* Model */,
-				93449AAD271E72570094AA60 /* Mine - Two */,
-				93449AB0271E729B0094AA60 /* MineViewController.swift */,
-			);
-			path = Mine;
 			sourceTree = "<group>";
 		};
 		93BE4801271E7025001ED671 /* Record */ = {
@@ -599,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A9B2AD2734061C00135EBB /* MineModel.swift in Sources */,
 				93449ACB271ED9720094AA60 /* AddView.swift in Sources */,
 				93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */,
 				93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */,
@@ -606,33 +607,32 @@
 				936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */,
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
-				936841FE273263FA00404810 /* MineModel.swift in Sources */,
 				936B49A7272680C90017D069 /* DishViewController.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
 				93E543F0271FECF000E6DE66 /* RecommendCollectionViewCell.swift in Sources */,
-				936841FC273263DF00404810 /* MineHeadTableViewCell.swift in Sources */,
+				93A9B2A82734061C00135EBB /* MIneBodyTableViewCell.swift in Sources */,
 				9389083827217AB0001897AF /* HomeModel.swift in Sources */,
 				938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */,
-				9347ED1C27337C16002C43A2 /* EditBodyTableViewCell.swift in Sources */,
 				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
 				93449ABE271E740E0094AA60 /* Launch.swift in Sources */,
 				939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */,
-				9347ED1E27337C23002C43A2 /* EditHeadTableViewCell.swift in Sources */,
-				936841FA273263CE00404810 /* MIneBodyTableViewCell.swift in Sources */,
+				93A9B2AB2734061C00135EBB /* EditHeadTableViewCell.swift in Sources */,
 				9311F589272D21E900610838 /* SupplementDetailViewController.swift in Sources */,
 				93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */,
 				931C2660272B828300EACD31 /* DishContentView.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
-				9347ED1A273375E6002C43A2 /* EditViewController.swift in Sources */,
+				93A9B2AC2734061C00135EBB /* MineViewController.swift in Sources */,
 				931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */,
+				93A9B2AA2734061C00135EBB /* EditViewController.swift in Sources */,
 				9325EEE4272EA835004ECF78 /* SearchViewController.swift in Sources */,
-				93449AB1271E729B0094AA60 /* MineViewController.swift in Sources */,
 				93449AC7271EA61D0094AA60 /* Const.swift in Sources */,
+				93A9B2A72734061C00135EBB /* MineHeadTableViewCell.swift in Sources */,
 				93E543F2271FED1000E6DE66 /* SupplementCollectionViewCell.swift in Sources */,
 				93E543EE271FECDC00E6DE66 /* SearchCollectionViewCell.swift in Sources */,
 				93E543F4271FED1F00E6DE66 /* SuggestCollectionViewCell.swift in Sources */,
+				93A9B2A92734061C00135EBB /* EditBodyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
