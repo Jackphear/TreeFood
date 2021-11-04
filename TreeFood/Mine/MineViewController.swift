@@ -61,9 +61,9 @@ class MineViewController: UIViewController {
         configNavbar()
         configUI()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         archiveData(data: mineData)
     }
 
@@ -106,14 +106,13 @@ class MineViewController: UIViewController {
             backgroundImage.image = UIImage(named: "mine_img_bg")
             mineData.backgroundImage = archivImage(image: backgroundImage.image!, type: "backgroundImage")
         }
-        
+
         if let image = UIImage(contentsOfFile: mineData.userImage) {
             mineData.userImage = archivImage(image: image, type: "userImage")
         } else {
             let image = UIImage(named: "mine_img_header")
             mineData.userImage = archivImage(image: image!, type: "userImage")
         }
-        
     }
 
     @objc func changeBackgroundImage() {
@@ -129,7 +128,6 @@ extension MineViewController: UITableViewDelegate {
             vc.editCallBack = { data in
                 self.mineData = data
                 self.tableView.reloadData()
-
             }
             vc.updateUI(with: mineData)
             navigationController?.pushViewController(vc, animated: true)
@@ -214,7 +212,6 @@ extension MineViewController {
         let arr = NSMutableArray()
         arr.add(dic)
         arr.write(toFile: path, atomically: true)
-        //print(path)
     }
 
     func getLocalData() -> MineModel {
@@ -223,8 +220,6 @@ extension MineViewController {
         if let data = NSArray(contentsOfFile: path) {
             let dic = data[0] as! NSDictionary
             let model = MineModel.deserialize(from: dic, designatedPath: "")!
-            archiveData(data: model)
-            //print(data)
             return model
         } else {
             return MineModel(backgroundImage: "", userImage: "", userName: "去冰无糖", sex: "女", weight: "52", height: "168", birthday: "2000-01-01")
