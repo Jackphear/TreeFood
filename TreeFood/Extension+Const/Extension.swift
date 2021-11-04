@@ -452,3 +452,12 @@ public func getType(name: String) -> Species{
     }
     return Species.Breakfast
 }
+
+public func archivImage(image: UIImage, type: String) -> String {
+    if let imageData = image.jpegData(compressionQuality: 400) as NSData? {
+        let fullPath = NSHomeDirectory().appending("/Documents/").appending(type)
+        imageData.write(toFile: fullPath, atomically: true)
+        return fullPath
+    }
+    return ""
+}

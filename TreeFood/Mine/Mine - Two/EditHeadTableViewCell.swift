@@ -9,9 +9,9 @@ import UIKit
 
 class EditHeadTableViewCell: UITableViewCell {
     
-    public func updateUI(with title:String, imageString: String) {
+    public func updateUI(with title:String, image: UIImage) {
         self.contentLabel.text = title
-        self.userImage.image = UIImage(contentsOfFile: imageString)
+        self.userImage.image = image
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

@@ -10,13 +10,14 @@ import UIKit
 class EditViewController: UIViewController {
     // MARK: - 公有属性
 
-    var editCallBack: (() -> Void)?
+    var editCallBack: ((MineModel) -> Void)?
 
     // MARK: - 私有属性
 
     private var data = MineModel()
     private let editHeadCellID = "editHeadCell"
     private let editBodyCellID = "editBodyCell"
+    private var UserImage: UIImage?
 
     private lazy var tableView: UITableView = {
         let tableview = UITableView()
@@ -39,7 +40,7 @@ class EditViewController: UIViewController {
         label.alpha = 1.fit
         return label
     }()
-    
+
     private lazy var imagePickController: UIImagePickerController = {
         let controller = UIImagePickerController()
         controller.delegate = self
@@ -47,16 +48,37 @@ class EditViewController: UIViewController {
         return controller
     }()
 
+    private lazy var alertController: UIAlertController = {
+        let alert = UIAlertController(title: "更换头像", message: nil, preferredStyle: .alert)
+        let pickFromCamera = UIAlertAction(title: "拍照选取", style: .default, handler: { action in
+            self.pickFrom(with: action.title!)
+        })
+        let pickFromAlbum = UIAlertAction(title: "从相册选取", style: .default, handler: { action in
+            self.pickFrom(with: action.title!)
+        })
+        let cancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alert.addAction(pickFromAlbum)
+        alert.addAction(pickFromCamera)
+        alert.addAction(cancel)
+        return alert
+    }()
+
     // MARK: - 公有方法
-    
+
     public func updateUI(with data: MineModel) {
         self.data = data
+        UserImage = UIImage(contentsOfFile: data.userImage)!
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
         configNavbar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.editCallBack!(data)
     }
 
     // MARK: - 私有方法
@@ -84,19 +106,53 @@ class EditViewController: UIViewController {
         navigation.bar.alpha = 1
         navigation.item.title = "编辑资料"
     }
+
+    private func pickFrom(with type: String) {
+        if type == "拍照选取" {
+            if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera)) {
+                self.imagePickController.sourceType = .camera
+                self.imagePickController.showsCameraControls = true
+                self.imagePickController.cameraDevice = .front
+            }
+        } else {
+            self.imagePickController.sourceType = .photoLibrary
+        }
+        self.present(self.imagePickController, animated: true, completion: nil)
+    }
 }
 
 extension EditViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        self.UserImage = info[.originalImage] as? UIImage
+        self.tableView.reloadData()
+        self.dismiss(animated: true) {
+            self.data.userImage = archivImage(image: self.UserImage!, type: "userImage")
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension EditViewController: UITableViewDataSource, UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        switch indexPath.row {
+        case 0:
+            self.present(alertController, animated: true, completion: nil)
+        case 1:
+            break
+        case 2:
+            break
+        case 3:
+            break
+        default:
+            break
+        }
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         6
     }
@@ -105,7 +161,7 @@ extension EditViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: editHeadCellID, for: indexPath) as! EditHeadTableViewCell
-            cell.updateUI(with: "修改头像", imageString: data.userImage)
+            cell.updateUI(with: "修改头像", image: UserImage!)
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: editBodyCellID, for: indexPath) as! EditBodyTableViewCell
