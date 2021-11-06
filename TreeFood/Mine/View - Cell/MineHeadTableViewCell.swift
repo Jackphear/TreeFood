@@ -77,15 +77,15 @@ class MineHeadTableViewCell: UITableViewCell {
     // MARK: - 公有方法
 
     public func updateUI(with data: MineModel) {
-        if let dataImage = UIImage(contentsOfFile: data.userImage) {
-            self.userImg.image = dataImage
-        }else {
-            self.userImg.image = UIImage(named: "mine_img_header")
-            cellCallBack?(self.userImg.image!)
-        }
         self.userName.text = data.userName
         self.weightLabel.text = data.weight
         self.heightLabel.text = data.height
+        self.userImg.image = UIImage(contentsOfFile: data.userImage)
+        if data.sex == "女" {
+            self.sexIcon.image = UIImage(named: "woman")
+        } else {
+            self.sexIcon.image = UIImage(named: "man")
+        }
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

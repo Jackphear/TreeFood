@@ -23,6 +23,7 @@
 		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
 		936B49A7272680C90017D069 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A6272680C90017D069 /* DishViewController.swift */; };
 		936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A82726889A0017D069 /* MoreSupplementViewController.swift */; };
+		93843E5C2736483400070FF9 /* EditPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93843E5B2736483400070FF9 /* EditPickerView.swift */; };
 		9389083827217AB0001897AF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389083727217AB0001897AF /* HomeModel.swift */; };
 		938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC98B2725718900C78AE8 /* MoreDishViewController.swift */; };
 		93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981BF7271E682000EB1003 /* AppDelegate.swift */; };
@@ -88,6 +89,7 @@
 		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		936B49A6272680C90017D069 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 		936B49A82726889A0017D069 /* MoreSupplementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSupplementViewController.swift; sourceTree = "<group>"; };
+		93843E5B2736483400070FF9 /* EditPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPickerView.swift; sourceTree = "<group>"; };
 		9389083727217AB0001897AF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		938BC98B2725718900C78AE8 /* MoreDishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDishViewController.swift; sourceTree = "<group>"; };
 		93981BF4271E682000EB1003 /* TreeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +284,16 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		93843E592736479200070FF9 /* View - Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93A9B2A12734061C00135EBB /* EditBodyTableViewCell.swift */,
+				93A9B2A32734061C00135EBB /* EditHeadTableViewCell.swift */,
+				93843E5B2736483400070FF9 /* EditPickerView.swift */,
+			);
+			path = "View - Cell";
+			sourceTree = "<group>";
+		};
 		93981BEB271E682000EB1003 = {
 			isa = PBXGroup;
 			children = (
@@ -366,9 +378,8 @@
 		93A9B2A02734061C00135EBB /* Mine - Two */ = {
 			isa = PBXGroup;
 			children = (
-				93A9B2A12734061C00135EBB /* EditBodyTableViewCell.swift */,
+				93843E592736479200070FF9 /* View - Cell */,
 				93A9B2A22734061C00135EBB /* EditViewController.swift */,
-				93A9B2A32734061C00135EBB /* EditHeadTableViewCell.swift */,
 			);
 			path = "Mine - Two";
 			sourceTree = "<group>";
@@ -623,6 +634,7 @@
 				931C2660272B828300EACD31 /* DishContentView.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
+				93843E5C2736483400070FF9 /* EditPickerView.swift in Sources */,
 				93A9B2AC2734061C00135EBB /* MineViewController.swift in Sources */,
 				931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */,
 				93A9B2AA2734061C00135EBB /* EditViewController.swift in Sources */,
