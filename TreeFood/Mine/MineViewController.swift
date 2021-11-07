@@ -216,7 +216,6 @@ extension MineViewController {
 
     func getLocalData() -> MineModel {
         let path = NSHomeDirectory().appending("/Documents/user.plist")
-        print(path)
         if let data = NSArray(contentsOfFile: path) {
             let dic = data[0] as! NSDictionary
             let model = MineModel.deserialize(from: dic, designatedPath: "")!

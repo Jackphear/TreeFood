@@ -17,3 +17,10 @@ struct MineModel: HandyJSON {
     var height = ""
     var birthday = ""
 }
+
+public enum editType {
+    case sex
+    case height
+    case date
+    case weight
+}

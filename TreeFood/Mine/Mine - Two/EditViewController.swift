@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreMIDI
 
 class EditViewController: UIViewController {
     // MARK: - 公有属性
@@ -62,6 +63,20 @@ class EditViewController: UIViewController {
         alert.addAction(cancel)
         return alert
     }()
+    
+//    private lazy var pickView: EditPickerView = {
+//        let view = EditPickerView()
+//        view.callBack = { data in
+//            print(data)
+////            self.data.sex = data.sex
+////            self.data.weight = data.weight
+////            self.data.height = data.height
+////            self.data.birthday = data.birthday
+//            
+//            //self.tableView.reloadData()
+//        }
+//        return view
+//    }()
 
     // MARK: - 公有方法
 
@@ -119,6 +134,20 @@ class EditViewController: UIViewController {
         }
         self.present(self.imagePickController, animated: true, completion: nil)
     }
+    
+    private func pick(with type: editType) {
+        let pickView = EditPickerView()
+        pickView.updateUI(with: type, data: self.data)
+        self.view.addSubview(pickView)
+        pickView.snp.makeConstraints{ make in
+            make.left.right.top.bottom.equalToSuperview()
+        }
+        pickView.callBack = { data in
+            self.data = data
+            self.tableView.reloadData()
+        }
+        
+    }
 }
 
 extension EditViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -145,9 +174,13 @@ extension EditViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:
             break
         case 2:
-            break
+            pick(with: .height)
         case 3:
-            break
+            pick(with: .weight)
+        case 4:
+            pick(with: .sex)
+        case 5:
+            pick(with: .date)
         default:
             break
         }

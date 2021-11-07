@@ -9,14 +9,8 @@ import UIKit
 
 class EditPickerView: UIView {
     // MARK: - 公有属性
-
-    enum editType {
-        case sex
-        case height
-        case date
-        case weight
-    }
-
+    public var data = MineModel()
+    public var callBack: ((MineModel) -> ())?
     // MARK: - 私有属性
 
     private var viewType = editType.sex
@@ -44,6 +38,7 @@ class EditPickerView: UIView {
     lazy var confirmButton: UIButton = {
         let button = UIButton()
         button.setTitle("确定", for: .normal)
+        button.addTarget(self, action: #selector(add), for: .touchUpInside)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
@@ -51,6 +46,7 @@ class EditPickerView: UIView {
     lazy var cancelButton: UIButton = {
         let button = UIButton()
         button.setTitle("取消", for: .normal)
+        button.addTarget(self, action: #selector(cancel), for: .touchUpInside)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
@@ -66,24 +62,25 @@ class EditPickerView: UIView {
 
     public func updateUI(with type: editType, data: MineModel) {
         viewType = type
+        self.data = data
         switch viewType {
         case .sex:
-            if data.sex == "男" {
-                self.pickView.selectRow(0, inComponent: 0, animated: true)
+            if self.data.sex == "男" {
+                pickView.selectRow(0, inComponent: 0, animated: true)
             } else {
-                self.pickView.selectRow(1, inComponent: 0, animated: true)
+                pickView.selectRow(1, inComponent: 0, animated: true)
             }
         case .height:
-            self.pickView.selectRow(Int(data.height)! - 1, inComponent: 0, animated: true)
+            pickView.selectRow(Int(self.data.height)!, inComponent: 0, animated: true)
         case .weight:
-            self.pickView.selectRow(Int(data.weight)! - 1, inComponent: 0, animated: true)
+            pickView.selectRow(Int(self.data.weight)!, inComponent: 0, animated: true)
         case .date:
-            let year = Int(data.birthday.prefix(4))!
-            let month = Int(data.birthday.prefix(7).suffix(2))!
-            let day = Int(data.birthday.suffix(2))!
-            self.pickView.selectRow(year - 1949, inComponent: 0, animated: true)
-            self.pickView.selectRow(month - 1, inComponent: 1, animated: true)
-            self.pickView.selectRow(day - 1, inComponent: 2, animated: true)
+            let year = Int(self.data.birthday.prefix(4))!
+            let month = Int(self.data.birthday.prefix(7).suffix(2))!
+            let day = Int(self.data.birthday.suffix(2))!
+            pickView.selectRow(year - 1949, inComponent: 0, animated: true)
+            pickView.selectRow(month - 1, inComponent: 1, animated: true)
+            pickView.selectRow(day - 1, inComponent: 2, animated: true)
         }
     }
 
@@ -91,6 +88,7 @@ class EditPickerView: UIView {
         super.init(frame: frame)
         configUI()
         configDate()
+        
     }
 
     required init?(coder: NSCoder) {
@@ -98,6 +96,38 @@ class EditPickerView: UIView {
     }
 
     // MARK: - 私有方法
+
+    @objc func add() {
+        switch viewType {
+        case .sex:
+            let sex = sexArray[pickView.selectedRow(inComponent: 0)]
+            data.sex = sex
+        case .height:
+            let height = String(numArray[pickView.selectedRow(inComponent: 0)])
+            data.height = height
+        case .date:
+            let year = String(years[pickView.selectedRow(inComponent: 0)])
+            var month = String(months[pickView.selectedRow(inComponent: 1)])
+            var day = String(days[pickView.selectedRow(inComponent: 2)])
+            if months[pickView.selectedRow(inComponent: 1)] < 10 {
+                month = "0" + month
+            }
+            if days[pickView.selectedRow(inComponent: 2)] < 10 {
+                day = "0" + day
+            }
+            let date = year + "-" + month + "-" + day
+            data.birthday = date
+        case .weight:
+            let weight = String(numArray[pickView.selectedRow(inComponent: 0)])
+            data.height = weight
+        }
+        callBack!(data)
+        self.removeFromSuperview()
+    }
+    
+    @objc func cancel() {
+        self.removeFromSuperview()
+    }
 
     func configDate() {
         let date = Date()
@@ -148,7 +178,31 @@ class EditPickerView: UIView {
 
 extension EditPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        switch viewType {
+        case .date:
+            let year = years[pickerView.selectedRow(inComponent: 0)]
+            let month = months[pickerView.selectedRow(inComponent: 1)]
+            let day = days[pickerView.selectedRow(inComponent: 2)]
+            if month == 2 {
+                if (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) {
+                    if day > 28 {
+                        pickerView.selectRow(27, inComponent: 2, animated: true)
+                    }
+                } else {
+                    if day > 29 {
+                        pickerView.selectRow(28, inComponent: 2, animated: true)
+                    }
+                }
+            } else {
+                if month == 2 || month == 4 || month == 6 || month == 9 {
+                    if day > 30 {
+                        pickerView.selectRow(29, inComponent: 2, animated: true)
+                    }
+                }
+            }
+        default:
+            break
+        }
     }
 
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
@@ -174,7 +228,7 @@ extension EditPickerView: UIPickerViewDelegate, UIPickerViewDataSource {
         }
         return label
     }
-    
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         switch viewType {
         case .sex:
