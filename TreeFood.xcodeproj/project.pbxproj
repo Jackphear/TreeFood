@@ -52,6 +52,9 @@
 		93E543F2271FED1000E6DE66 /* SupplementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543F1271FED1000E6DE66 /* SupplementCollectionViewCell.swift */; };
 		93E543F4271FED1F00E6DE66 /* SuggestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543F3271FED1F00E6DE66 /* SuggestCollectionViewCell.swift */; };
 		93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E543F5271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift */; };
+		93F7C1952738F30600E6B196 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7C1942738F30600E6B196 /* EditNameViewController.swift */; };
+		93F7C1972738F7D400E6B196 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7C1962738F7D400E6B196 /* FeedbackViewController.swift */; };
+		93F7C1992738F8C200E6B196 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7C1982738F8C200E6B196 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		93E543F1271FED1000E6DE66 /* SupplementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementCollectionViewCell.swift; sourceTree = "<group>"; };
 		93E543F3271FED1F00E6DE66 /* SuggestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestCollectionViewCell.swift; sourceTree = "<group>"; };
 		93E543F5271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceCollectionViewCell.swift; sourceTree = "<group>"; };
+		93F7C1942738F30600E6B196 /* EditNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
+		93F7C1962738F7D400E6B196 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		93F7C1982738F8C200E6B196 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E249620CA0C60C818E7DBBD1 /* Pods-TreeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeFood.debug.xcconfig"; path = "Target Support Files/Pods-TreeFood/Pods-TreeFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +296,7 @@
 				93A9B2A12734061C00135EBB /* EditBodyTableViewCell.swift */,
 				93A9B2A32734061C00135EBB /* EditHeadTableViewCell.swift */,
 				93843E5B2736483400070FF9 /* EditPickerView.swift */,
+				93F7C1942738F30600E6B196 /* EditNameViewController.swift */,
 			);
 			path = "View - Cell";
 			sourceTree = "<group>";
@@ -380,6 +387,8 @@
 			children = (
 				93843E592736479200070FF9 /* View - Cell */,
 				93A9B2A22734061C00135EBB /* EditViewController.swift */,
+				93F7C1962738F7D400E6B196 /* FeedbackViewController.swift */,
+				93F7C1982738F8C200E6B196 /* AboutViewController.swift */,
 			);
 			path = "Mine - Two";
 			sourceTree = "<group>";
@@ -619,6 +628,7 @@
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				936B49A7272680C90017D069 /* DishViewController.swift in Sources */,
+				93F7C1952738F30600E6B196 /* EditNameViewController.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
 				93E543F0271FECF000E6DE66 /* RecommendCollectionViewCell.swift in Sources */,
 				93A9B2A82734061C00135EBB /* MIneBodyTableViewCell.swift in Sources */,
@@ -636,6 +646,8 @@
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
 				93843E5C2736483400070FF9 /* EditPickerView.swift in Sources */,
 				93A9B2AC2734061C00135EBB /* MineViewController.swift in Sources */,
+				93F7C1972738F7D400E6B196 /* FeedbackViewController.swift in Sources */,
+				93F7C1992738F8C200E6B196 /* AboutViewController.swift in Sources */,
 				931C2662272B85C400EACD31 /* ingredientsCell.swift in Sources */,
 				93A9B2AA2734061C00135EBB /* EditViewController.swift in Sources */,
 				9325EEE4272EA835004ECF78 /* SearchViewController.swift in Sources */,

@@ -172,7 +172,13 @@ extension EditViewController: UITableViewDataSource, UITableViewDelegate {
         case 0:
             self.present(alertController, animated: true, completion: nil)
         case 1:
-            break
+            let vc = EditNameViewController()
+            vc.callBack = { name in
+                self.data.userName = name
+                self.tableView.reloadData()
+            }
+            vc.updateUI(with: self.data)
+            self.navigationController?.pushViewController(vc, animated: true)
         case 2:
             pick(with: .height)
         case 3:

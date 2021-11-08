@@ -141,9 +141,11 @@ extension MineViewController: UITableViewDelegate {
             }
         default:
             if indexPath.row == 0 {
-                print("1 0")
+                let vc = FeedbackViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
             } else {
-                print("1 1")
+                let vc = AboutViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
