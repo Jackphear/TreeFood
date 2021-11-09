@@ -145,32 +145,32 @@ class EditPickerView: UIView {
         backgroundView.addSubview(pickView)
 
         backgroundView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(650)
+            make.top.equalToSuperview().offset(600.fit)
             make.bottom.right.left.equalToSuperview()
         }
 
         borderView.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
-            make.height.equalTo(50)
+            make.height.equalTo(50.fit)
         }
 
         pickView.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
-            make.top.equalTo(borderView.snp.bottom).offset(10)
+            make.top.equalTo(borderView.snp.bottom).offset(10.fit)
             make.bottom.equalToSuperview()
         }
 
         cancelButton.snp.makeConstraints { make in
-            make.height.equalTo(30)
-            make.width.equalTo(70)
-            make.left.equalToSuperview().offset(20)
+            make.height.equalTo(30.fit)
+            make.width.equalTo(70.fit)
+            make.left.equalToSuperview().offset(20.fit)
             make.centerY.equalToSuperview()
         }
 
         confirmButton.snp.makeConstraints { make in
-            make.height.equalTo(30)
-            make.width.equalTo(70)
-            make.right.equalTo(borderView.snp.right).offset(-20)
+            make.height.equalTo(30.fit)
+            make.width.equalTo(70.fit)
+            make.right.equalTo(borderView.snp.right).offset(-20.fit)
             make.centerY.equalToSuperview()
         }
     }
