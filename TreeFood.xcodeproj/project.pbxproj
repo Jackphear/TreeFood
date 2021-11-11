@@ -26,6 +26,13 @@
 		93843E5C2736483400070FF9 /* EditPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93843E5B2736483400070FF9 /* EditPickerView.swift */; };
 		9389083827217AB0001897AF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389083727217AB0001897AF /* HomeModel.swift */; };
 		938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938BC98B2725718900C78AE8 /* MoreDishViewController.swift */; };
+		93940DF7273D333F00401F66 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940DF6273D333F00401F66 /* CircleView.swift */; };
+		93940DF9273D33B200401F66 /* TopInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940DF8273D33B200401F66 /* TopInfoCollectionViewCell.swift */; };
+		93940DFB273D376100401F66 /* IntakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940DFA273D376100401F66 /* IntakeCollectionViewCell.swift */; };
+		93940DFD273D411500401F66 /* WaterIntakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940DFC273D411500401F66 /* WaterIntakeCollectionViewCell.swift */; };
+		93940DFF273D455A00401F66 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940DFE273D455A00401F66 /* Record.swift */; };
+		93940E01273D45DB00401F66 /* RecordTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940E00273D45DB00401F66 /* RecordTitleView.swift */; };
+		93940E03273D4E9600401F66 /* RecodeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93940E02273D4E9500401F66 /* RecodeCollectionReusableView.swift */; };
 		9397C4EA273A557E002A998D /* AnalyzeFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397C4E9273A557E002A998D /* AnalyzeFirstViewController.swift */; };
 		9397C4EC273A5599002A998D /* AnalyzeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397C4EB273A5599002A998D /* AnalyzeSecondViewController.swift */; };
 		9397C4F1273A58EA002A998D /* AnalyzeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397C4F0273A58EA002A998D /* AnalyzeModel.swift */; };
@@ -98,6 +105,13 @@
 		93843E5B2736483400070FF9 /* EditPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPickerView.swift; sourceTree = "<group>"; };
 		9389083727217AB0001897AF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		938BC98B2725718900C78AE8 /* MoreDishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDishViewController.swift; sourceTree = "<group>"; };
+		93940DF6273D333F00401F66 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		93940DF8273D33B200401F66 /* TopInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		93940DFA273D376100401F66 /* IntakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeCollectionViewCell.swift; sourceTree = "<group>"; };
+		93940DFC273D411500401F66 /* WaterIntakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeCollectionViewCell.swift; sourceTree = "<group>"; };
+		93940DFE273D455A00401F66 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		93940E00273D45DB00401F66 /* RecordTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTitleView.swift; sourceTree = "<group>"; };
+		93940E02273D4E9500401F66 /* RecodeCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecodeCollectionReusableView.swift; sourceTree = "<group>"; };
 		9397C4E9273A557E002A998D /* AnalyzeFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeFirstViewController.swift; sourceTree = "<group>"; };
 		9397C4EB273A5599002A998D /* AnalyzeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeSecondViewController.swift; sourceTree = "<group>"; };
 		9397C4F0273A58EA002A998D /* AnalyzeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeModel.swift; sourceTree = "<group>"; };
@@ -254,6 +268,7 @@
 		93449AB3271E72C00094AA60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93940DFE273D455A00401F66 /* Record.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +276,12 @@
 		93449AB4271E72CD0094AA60 /* View - Cell */ = {
 			isa = PBXGroup;
 			children = (
+				93940DF6273D333F00401F66 /* CircleView.swift */,
+				93940DF8273D33B200401F66 /* TopInfoCollectionViewCell.swift */,
+				93940DFA273D376100401F66 /* IntakeCollectionViewCell.swift */,
+				93940DFC273D411500401F66 /* WaterIntakeCollectionViewCell.swift */,
+				93940E00273D45DB00401F66 /* RecordTitleView.swift */,
+				93940E02273D4E9500401F66 /* RecodeCollectionReusableView.swift */,
 			);
 			path = "View - Cell";
 			sourceTree = "<group>";
@@ -334,6 +355,7 @@
 				93981BF9271E682000EB1003 /* SceneDelegate.swift */,
 				93981BFB271E682000EB1003 /* ViewController.swift */,
 				93981C00271E682500EB1003 /* Assets.xcassets */,
+				93BE4801271E7025001ED671 /* Record */,
 				93A9B29C2734061C00135EBB /* Mine */,
 				93449AA6271E71540094AA60 /* Extension+Const */,
 				93449AA7271E71C70094AA60 /* Add */,
@@ -341,7 +363,6 @@
 				93E543E4271FD8CF00E6DE66 /* Data */,
 				93BE47FF271E7013001ED671 /* Home */,
 				93449ABC271E73940094AA60 /* Launch */,
-				93BE4801271E7025001ED671 /* Record */,
 			);
 			path = TreeFood;
 			sourceTree = "<group>";
@@ -620,9 +641,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93940DFB273D376100401F66 /* IntakeCollectionViewCell.swift in Sources */,
 				9397C4EA273A557E002A998D /* AnalyzeFirstViewController.swift in Sources */,
 				93A9B2AD2734061C00135EBB /* MineModel.swift in Sources */,
 				93449ACB271ED9720094AA60 /* AddView.swift in Sources */,
+				93940E01273D45DB00401F66 /* RecordTitleView.swift in Sources */,
 				93449ABB271E73630094AA60 /* AnalyzeViewController.swift in Sources */,
 				93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */,
 				93449AC3271EA1A00094AA60 /* BarContentView.swift in Sources */,
@@ -630,12 +653,16 @@
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				9397C4F1273A58EA002A998D /* AnalyzeModel.swift in Sources */,
+				93940DFD273D411500401F66 /* WaterIntakeCollectionViewCell.swift in Sources */,
+				93940E03273D4E9600401F66 /* RecodeCollectionReusableView.swift in Sources */,
 				936B49A7272680C90017D069 /* DishViewController.swift in Sources */,
 				93F7C1952738F30600E6B196 /* EditNameViewController.swift in Sources */,
+				93940DF7273D333F00401F66 /* CircleView.swift in Sources */,
 				93981BFA271E682000EB1003 /* SceneDelegate.swift in Sources */,
 				93E543F0271FECF000E6DE66 /* RecommendCollectionViewCell.swift in Sources */,
 				93A9B2A82734061C00135EBB /* MIneBodyTableViewCell.swift in Sources */,
 				9389083827217AB0001897AF /* HomeModel.swift in Sources */,
+				93940DF9273D33B200401F66 /* TopInfoCollectionViewCell.swift in Sources */,
 				938BC98C2725718A00C78AE8 /* MoreDishViewController.swift in Sources */,
 				93449AC5271EA5FD0094AA60 /* Extension.swift in Sources */,
 				93449AB6271E72E60094AA60 /* RecordViewController.swift in Sources */,
@@ -645,6 +672,7 @@
 				9311F589272D21E900610838 /* SupplementDetailViewController.swift in Sources */,
 				93E543F6271FED5C00E6DE66 /* PreferenceCollectionViewCell.swift in Sources */,
 				931C2660272B828300EACD31 /* DishContentView.swift in Sources */,
+				93940DFF273D455A00401F66 /* Record.swift in Sources */,
 				93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */,
 				93449AAC271E722F0094AA60 /* HomeViewController.swift in Sources */,
 				93843E5C2736483400070FF9 /* EditPickerView.swift in Sources */,
