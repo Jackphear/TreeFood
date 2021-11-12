@@ -107,7 +107,6 @@ class IntakeCollectionViewCell: UICollectionViewCell {
             leftTopView.layer.borderColor = UIColor(red: 1, green: 0.68, blue: 0.49, alpha: 1).cgColor
             typeLabel.textColor = .white
         }else {
-            backView.image = UIImage(named: "")
             backView.clipsToBounds = false
             addLabel.alpha = 1
             addButton.alpha = 1

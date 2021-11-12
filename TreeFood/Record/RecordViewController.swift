@@ -19,6 +19,7 @@ class RecordViewController: UIViewController {
 
     private var imageString:String? = nil
     private let cellType = [Species.Breakfast, .Launch, .Dinner, .Snacks]
+    private var cellImage:[Species: String?] = [Species.Breakfast: nil, .Launch: nil, .Dinner: nil, .Snacks: nil]
     private var index = -1
     private var recorderData = RecoderDataClass()
     private var datas = Today()
@@ -75,12 +76,22 @@ class RecordViewController: UIViewController {
         return collectionView
     }()
 
-    // MARK: -
+    // MARK: -公有方法
 
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        NotificationCenter.default.addObserver(self, selector: #selector(addFood(notification:)), name: NSNotification.Name(rawValue: "addFood"), object: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
         configData()
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -123,6 +134,13 @@ class RecordViewController: UIViewController {
         recorderData = JSONDeserializer<RecoderDataClass>.deserializeFrom(json: json["data"].description)!
         updateUI(with: recorderData.today)
     }
+    
+    @objc private func addFood(notification: Notification) {
+        if let dic = notification.object as? Dictionary<Species, String> {
+            let type = dic.keys.first!
+            cellImage[type] = dic[type]
+        }
+    }
 }
 
 extension RecordViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -152,7 +170,7 @@ extension RecordViewController: UICollectionViewDataSource, UICollectionViewDele
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: intakeCellID, for: indexPath) as! IntakeCollectionViewCell
             cell.initWithType(with: cellType[indexPath.row])
-            cell.updateUI(with: imageString)
+            cell.updateUI(with: cellImage[cellType[indexPath.row]] as? String)
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: waterCellID, for: indexPath) as! WaterIntakeCollectionViewCell

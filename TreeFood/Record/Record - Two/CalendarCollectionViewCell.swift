@@ -34,7 +34,7 @@ class CalendarCollectionViewCell: UITableViewCell {
         let attrString = NSMutableAttributedString(string: "早餐")
         label.frame = CGRect(x: 12, y: 6, width: 35, height: 24)
         label.numberOfLines = 0
-        let attr: [NSAttributedString.Key: Any] = [.font: UIFont(name: "PingFang SC", size: 17), .foregroundColor: UIColor(red: 1, green: 1, blue: 1, alpha: 1)]
+        let attr: [NSAttributedString.Key: Any] = [.font: UIFont(name: "PingFang SC", size: 17)!, .foregroundColor: UIColor(red: 1, green: 1, blue: 1, alpha: 1)]
         attrString.addAttributes(attr, range: NSRange(location: 0, length: attrString.length))
         label.attributedText = attrString
         label.alpha = 1
@@ -75,7 +75,7 @@ class CalendarCollectionViewCell: UITableViewCell {
         let label = UILabel(frame: CGRect(x: 25, y: 15, width: 79, height: 20))
         let attrString = NSMutableAttributedString(string: "7:30 AM")
         label.numberOfLines = 0
-        let attr: [NSAttributedString.Key: Any] = [.font: UIFont(name: "PingFang SC", size: 15), .foregroundColor: UIColor(red: 0.29, green: 0.28, blue: 0.26, alpha: 1)]
+        let attr: [NSAttributedString.Key: Any] = [.font: UIFont(name: "PingFang SC", size: 15)!, .foregroundColor: UIColor(red: 0.29, green: 0.28, blue: 0.26, alpha: 1)]
         attrString.addAttributes(attr, range: NSRange(location: 0, length: attrString.length))
         label.attributedText = attrString
         label.alpha = 1

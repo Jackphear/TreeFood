@@ -77,6 +77,8 @@ class DishDetailViewController: UIViewController {
     }()
     
     
+    
+    
 
     //MARK: -公有方法
     
@@ -137,7 +139,8 @@ class DishDetailViewController: UIViewController {
     
     func addButton(){
         dishView.buttonBlock = {
-            print("addbutton")
+            let mesaage = [self.foodType: self.data.image]
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "addFood"), object: mesaage)
         }
     }
 
