@@ -133,7 +133,8 @@ extension MineViewController: UITableViewDelegate {
             navigationController?.pushViewController(vc, animated: true)
         case 1:
             if indexPath.row == 0 {
-                print("1 0")
+                let vc = CalendarViewController()
+                navigationController?.pushViewController(vc, animated: true)
             } else {
                 let vc = MoreDishViewController()
                 vc.updateUI(with: preferenceData, title: "最近偏爱")

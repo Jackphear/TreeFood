@@ -5,8 +5,8 @@
 //  Created by 王韬 on 2021/11/4.
 //
 
-import UIKit
 import CoreMIDI
+import UIKit
 
 class EditViewController: UIViewController {
     // MARK: - 公有属性
@@ -63,20 +63,6 @@ class EditViewController: UIViewController {
         alert.addAction(cancel)
         return alert
     }()
-    
-//    private lazy var pickView: EditPickerView = {
-//        let view = EditPickerView()
-//        view.callBack = { data in
-//            print(data)
-////            self.data.sex = data.sex
-////            self.data.weight = data.weight
-////            self.data.height = data.height
-////            self.data.birthday = data.birthday
-//            
-//            //self.tableView.reloadData()
-//        }
-//        return view
-//    }()
 
     // MARK: - 公有方法
 
@@ -90,10 +76,10 @@ class EditViewController: UIViewController {
         configUI()
         configNavbar()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.editCallBack!(data)
+        editCallBack!(data)
     }
 
     // MARK: - 私有方法
@@ -124,44 +110,42 @@ class EditViewController: UIViewController {
 
     private func pickFrom(with type: String) {
         if type == "拍照选取" {
-            if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera)) {
-                self.imagePickController.sourceType = .camera
-                self.imagePickController.showsCameraControls = true
-                self.imagePickController.cameraDevice = .front
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+                imagePickController.sourceType = .camera
+                imagePickController.showsCameraControls = true
+                imagePickController.cameraDevice = .front
             }
         } else {
-            self.imagePickController.sourceType = .photoLibrary
+            imagePickController.sourceType = .photoLibrary
         }
-        self.present(self.imagePickController, animated: true, completion: nil)
+        present(imagePickController, animated: true, completion: nil)
     }
-    
+
     private func pick(with type: editType) {
         let pickView = EditPickerView()
-        pickView.updateUI(with: type, data: self.data)
-        self.view.addSubview(pickView)
-        pickView.snp.makeConstraints{ make in
+        pickView.updateUI(with: type, data: data)
+        view.addSubview(pickView)
+        pickView.snp.makeConstraints { make in
             make.left.right.top.bottom.equalToSuperview()
         }
         pickView.callBack = { data in
             self.data = data
             self.tableView.reloadData()
         }
-        
     }
 }
 
 extension EditViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        self.UserImage = info[.originalImage] as? UIImage
-        self.tableView.reloadData()
-        self.dismiss(animated: true) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        UserImage = info[.originalImage] as? UIImage
+        tableView.reloadData()
+        dismiss(animated: true) {
             self.data.userImage = archivImage(image: self.UserImage!, type: "userImage")
         }
     }
-    
+
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -170,15 +154,15 @@ extension EditViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
-            self.present(alertController, animated: true, completion: nil)
+            present(alertController, animated: true, completion: nil)
         case 1:
             let vc = EditNameViewController()
             vc.callBack = { name in
                 self.data.userName = name
                 self.tableView.reloadData()
             }
-            vc.updateUI(with: self.data)
-            self.navigationController?.pushViewController(vc, animated: true)
+            vc.updateUI(with: data)
+            navigationController?.pushViewController(vc, animated: true)
         case 2:
             pick(with: .height)
         case 3:

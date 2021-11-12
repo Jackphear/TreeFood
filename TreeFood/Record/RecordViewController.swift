@@ -26,14 +26,12 @@ class RecordViewController: UIViewController {
     private lazy var titleView: RecordTitleView = {
         let view = RecordTitleView(frame: CGRect(x: 0, y: 0, width: CFWidth, height: kNavBarHeight))
         view.clickAddButtonBlock = {
-            // let calendarVC = CalendarViewController()
-            // self.navigationController?.pushViewController(calendarVC, animated: true)
+             let calendarVC = CalendarViewController()
+             self.navigationController?.pushViewController(calendarVC, animated: true)
         }
         view.clickCalendarButtonBlock = {
-            print("calendar")
         }
         view.clickRightArrowButtonBlock = {
-            print("rightArrow")
             guard self.index > -1 else {
                 return
             }
@@ -47,7 +45,6 @@ class RecordViewController: UIViewController {
             self.updateUI(with: self.recorderData.old_datas[self.index])
         }
         view.clickLeftArrowButtonBlock = {
-            print("leftArrow")
             guard self.index < self.recorderData.old_datas.count - 1 else {
                 return
             }
