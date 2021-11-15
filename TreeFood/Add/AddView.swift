@@ -15,10 +15,10 @@ class AddView: UIView {
         let resultView = super.hitTest(point, with: event)
         if resultView != nil {
             return resultView
-        }else{
+        } else {
             for subView in subviews.reversed() {
-                let point = subView.convert(point, to: self)
-                let hitView = subView.hitTest(point, with: event)
+                let convertPoint: CGPoint = subView.convert(point, from: self)
+                let hitView = subView.hitTest(convertPoint, with: event)
                 if hitView != nil {
                     return hitView
                 }

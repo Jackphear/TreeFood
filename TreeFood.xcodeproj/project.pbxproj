@@ -48,6 +48,8 @@
 		93981C0F271E682600EB1003 /* TreeFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C0E271E682600EB1003 /* TreeFoodTests.swift */; };
 		93981C19271E682600EB1003 /* TreeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C18271E682600EB1003 /* TreeFoodUITests.swift */; };
 		93981C1B271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */; };
+		939B8C4627421814002E662C /* AddMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8C4527421814002E662C /* AddMenu.swift */; };
+		939B8C482742244B002E662C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B8C472742244B002E662C /* AddViewController.swift */; };
 		939D160F27298B5A00E02F8D /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D160E27298B5A00E02F8D /* DishDetailViewController.swift */; };
 		93A9B2A72734061C00135EBB /* MineHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B29E2734061C00135EBB /* MineHeadTableViewCell.swift */; };
 		93A9B2A82734061C00135EBB /* MIneBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A9B29F2734061C00135EBB /* MIneBodyTableViewCell.swift */; };
@@ -134,6 +136,8 @@
 		93981C14271E682600EB1003 /* TreeFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93981C18271E682600EB1003 /* TreeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITests.swift; sourceTree = "<group>"; };
 		93981C1A271E682600EB1003 /* TreeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		939B8C4527421814002E662C /* AddMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenu.swift; sourceTree = "<group>"; };
+		939B8C472742244B002E662C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		939D160E27298B5A00E02F8D /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		93A9B29E2734061C00135EBB /* MineHeadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeadTableViewCell.swift; sourceTree = "<group>"; };
 		93A9B29F2734061C00135EBB /* MIneBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIneBodyTableViewCell.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				93449ACA271ED9720094AA60 /* AddView.swift */,
+				939B8C4527421814002E662C /* AddMenu.swift */,
+				939B8C472742244B002E662C /* AddViewController.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -664,6 +670,7 @@
 				9397C4F1273A58EA002A998D /* AnalyzeModel.swift in Sources */,
 				93940DFD273D411500401F66 /* WaterIntakeCollectionViewCell.swift in Sources */,
 				93940E03273D4E9600401F66 /* RecodeCollectionReusableView.swift in Sources */,
+				939B8C4627421814002E662C /* AddMenu.swift in Sources */,
 				93888928273DEFDF00ED3A7E /* CalendarCollectionViewCell.swift in Sources */,
 				936B49A7272680C90017D069 /* DishViewController.swift in Sources */,
 				93F7C1952738F30600E6B196 /* EditNameViewController.swift in Sources */,
@@ -700,6 +707,7 @@
 				93E543EE271FECDC00E6DE66 /* SearchCollectionViewCell.swift in Sources */,
 				93E543F4271FED1F00E6DE66 /* SuggestCollectionViewCell.swift in Sources */,
 				93888926273DEFA800ED3A7E /* CalendarViewController.swift in Sources */,
+				939B8C482742244B002E662C /* AddViewController.swift in Sources */,
 				93A9B2A92734061C00135EBB /* EditBodyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

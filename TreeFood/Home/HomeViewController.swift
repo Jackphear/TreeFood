@@ -39,12 +39,13 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .black
         setUpUI()
         setNaviBar()
-
+        configCenterButton()
         setUpData()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        fanMenu.updateNode()
     }
 
     // MARK: - 控件
@@ -66,6 +67,13 @@ class HomeViewController: UIViewController {
         collcetionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeadCellID)
         return collcetionView
     }()
+    
+    private var fanMenu = AddMenu.getsharedInstance().fanMenu
+    
+    lazy var addView: AddView = {
+        let view = AddView()
+        return view
+    }()
 
     // MARK: - 私有方法
 
@@ -77,6 +85,40 @@ class HomeViewController: UIViewController {
             make.right.equalTo(self.view.snp.right).offset(0)
             make.bottom.equalToSuperview()
             make.top.equalTo(self.navigation.bar.snp.top).offset(0.fit)
+        }
+    }
+    
+    private func configCenterButton() {
+        self.tabBarController?.tabBar.addSubview(addView)
+        // 设置按钮的位置
+        let rect = self.tabBarController?.tabBar.frame
+        let value = rect!.width / CGFloat(5)
+        addView.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview()
+            make.width.equalTo(1.5 * value)
+            make.height.equalTo(value)
+        }
+        addView.addSubview(fanMenu)
+        fanMenu.snp.makeConstraints { (make) in
+            make.centerX.equalTo(addView.snp.centerX)
+            make.centerY.equalTo(addView.snp.top).offset(0.fit)
+            make.height.equalTo(value*5)
+            make.width.equalTo(CFWidth)
+        }
+        fanMenu.onItemDidClick = {button in
+            switch button.id {
+            case "早餐":
+                print("11")
+            case "午餐":
+                print("11")
+            case "晚餐":
+                print("11")
+            case "小食":
+                print("11")
+            default:
+                break
+            }
         }
     }
 

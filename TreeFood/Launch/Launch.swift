@@ -23,13 +23,15 @@ func Launch() -> ESTabBarController {
     recordVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "left"), title: "", image: UIImage(named: "recoder"), selectedImage: UIImage(named: "recoder"))
     mineVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(named: "mine"), selectedImage: UIImage(named: "mine"))
     analyzeVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(named: "archive"), selectedImage: UIImage(named: "archive"))
-    addVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(named: "menu_plus"), selectedImage: UIImage(named: "menu_plus"))
+    addVC.tabBarItem = ESTabBarItem.init(BarContentView(frame: .zero, postion: "right"), title: "", image: UIImage(), selectedImage: UIImage())
     
     let homeNavi = BaseNavigationController(rootViewController: homeVC)
     let recordNavi = BaseNavigationController(rootViewController: recordVC)
     let mineNavi = BaseNavigationController(rootViewController: mineVC)
     let analyzeNavi = BaseNavigationController(rootViewController: analyzeVC)
-    tabBarController.viewControllers = [homeNavi, recordNavi, addVC, analyzeNavi, mineNavi]
+    let addNavi = BaseNavigationController(rootViewController: addVC)
+    
+    tabBarController.viewControllers = [homeNavi, recordNavi, addNavi, analyzeNavi, mineNavi]
     
     UITabBar.appearance().isTranslucent = false
     UITabBar.appearance().tintColor = .white
