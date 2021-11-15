@@ -52,7 +52,7 @@ class EditHeadTableViewCell: UITableViewCell {
         }
         addSubview(contentLabel)
         contentLabel.snp.makeConstraints { make in
-            make.width.equalTo(64.fit)
+            make.width.equalTo(100.fit)
             make.height.equalTo(22.fit)
             make.left.equalToSuperview().offset(103.fit)
             make.top.equalToSuperview().offset(40.fit)

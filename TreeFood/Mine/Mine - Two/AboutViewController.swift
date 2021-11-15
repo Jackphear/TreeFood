@@ -81,7 +81,7 @@ class AboutViewController: UIViewController {
         versionLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalTo(self.label.snp.bottom).offset(2.fit)
-            make.width.equalTo(100.fit)
+            make.width.equalTo(150.fit)
             make.height.equalTo(40.fit)
         }
         
@@ -95,7 +95,7 @@ class AboutViewController: UIViewController {
         bottomLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().offset(-20.fit)
-            make.width.equalTo(300.fit)
+            make.width.equalTo(CFWidth.fit)
             make.height.equalTo(40.fit)
         }
     }

@@ -165,6 +165,7 @@ class DishContentView: UIView {
     }
     
     @objc func clickAddButton(){
+        self.topRightAddButton.isSelected = !self.topRightAddButton.isSelected
         buttonBlock?()
     }
 }
