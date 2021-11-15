@@ -86,13 +86,6 @@ struct Preference: HandyJSON {
     let dishes = [Dish]()
 }
 
-// MARK: - 背包食材
-
-struct BagFood {
-    let name: String
-    let caloris: Int
-}
-
 // MARK: - 用餐类型
 
 public enum Species: String {

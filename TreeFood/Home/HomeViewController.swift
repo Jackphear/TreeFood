@@ -109,13 +109,25 @@ class HomeViewController: UIViewController {
         fanMenu.onItemDidClick = {button in
             switch button.id {
             case "早餐":
-                print("11")
+                let nav = BaseNavigationController(rootViewController: AddViewController(with: .Breakfast))
+                nav.modalPresentationStyle = .fullScreen
+                nav.navigation.configuration.isEnabled = false
+                self.tabBarController?.present(nav, animated: true, completion: nil)
             case "午餐":
-                print("11")
+                let nav = BaseNavigationController(rootViewController: AddViewController(with: .Launch))
+                nav.modalPresentationStyle = .fullScreen
+                nav.navigation.configuration.isEnabled = false
+                self.tabBarController?.present(nav, animated: true, completion: nil)
             case "晚餐":
-                print("11")
+                let nav = BaseNavigationController(rootViewController: AddViewController(with: .Dinner))
+                nav.modalPresentationStyle = .fullScreen
+                nav.navigation.configuration.isEnabled = false
+                self.tabBarController?.present(nav, animated: true, completion: nil)
             case "小食":
-                print("11")
+                let nav = BaseNavigationController(rootViewController: AddViewController(with: .Snacks))
+                nav.modalPresentationStyle = .fullScreen
+                nav.navigation.configuration.isEnabled = false
+                self.tabBarController?.present(nav, animated: true, completion: nil)
             default:
                 break
             }

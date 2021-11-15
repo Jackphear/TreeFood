@@ -21,6 +21,9 @@
 		93449AC7271EA61D0094AA60 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC6271EA61D0094AA60 /* Const.swift */; };
 		93449AC9271EAEFB0094AA60 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */; };
 		93449ACB271ED9720094AA60 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93449ACA271ED9720094AA60 /* AddView.swift */; };
+		934EB130274269420072D793 /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EB12F274269420072D793 /* AddTableViewCell.swift */; };
+		934EB13227426A3C0072D793 /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EB13127426A3C0072D793 /* AddModel.swift */; };
+		934EB13427427AC60072D793 /* AddAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EB13327427AC60072D793 /* AddAnimation.swift */; };
 		936B49A7272680C90017D069 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A6272680C90017D069 /* DishViewController.swift */; };
 		936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B49A82726889A0017D069 /* MoreSupplementViewController.swift */; };
 		93843E5C2736483400070FF9 /* EditPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93843E5B2736483400070FF9 /* EditPickerView.swift */; };
@@ -105,6 +108,9 @@
 		93449AC6271EA61D0094AA60 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		93449AC8271EAEFB0094AA60 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		93449ACA271ED9720094AA60 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		934EB12F274269420072D793 /* AddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewCell.swift; sourceTree = "<group>"; };
+		934EB13127426A3C0072D793 /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
+		934EB13327427AC60072D793 /* AddAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnimation.swift; sourceTree = "<group>"; };
 		936B49A6272680C90017D069 /* DishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
 		936B49A82726889A0017D069 /* MoreSupplementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSupplementViewController.swift; sourceTree = "<group>"; };
 		93843E5B2736483400070FF9 /* EditPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPickerView.swift; sourceTree = "<group>"; };
@@ -231,6 +237,9 @@
 				93449ACA271ED9720094AA60 /* AddView.swift */,
 				939B8C4527421814002E662C /* AddMenu.swift */,
 				939B8C472742244B002E662C /* AddViewController.swift */,
+				934EB12F274269420072D793 /* AddTableViewCell.swift */,
+				934EB13127426A3C0072D793 /* AddModel.swift */,
+				934EB13327427AC60072D793 /* AddAnimation.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -665,7 +674,9 @@
 				93E543EC271FE24400E6DE66 /* HomeBaseCollectionViewCell.swift in Sources */,
 				93449AC3271EA1A00094AA60 /* BarContentView.swift in Sources */,
 				936B49A92726889A0017D069 /* MoreSupplementViewController.swift in Sources */,
+				934EB130274269420072D793 /* AddTableViewCell.swift in Sources */,
 				93981BFC271E682000EB1003 /* ViewController.swift in Sources */,
+				934EB13227426A3C0072D793 /* AddModel.swift in Sources */,
 				93981BF8271E682000EB1003 /* AppDelegate.swift in Sources */,
 				9397C4F1273A58EA002A998D /* AnalyzeModel.swift in Sources */,
 				93940DFD273D411500401F66 /* WaterIntakeCollectionViewCell.swift in Sources */,
@@ -708,6 +719,7 @@
 				93E543F4271FED1F00E6DE66 /* SuggestCollectionViewCell.swift in Sources */,
 				93888926273DEFA800ED3A7E /* CalendarViewController.swift in Sources */,
 				939B8C482742244B002E662C /* AddViewController.swift in Sources */,
+				934EB13427427AC60072D793 /* AddAnimation.swift in Sources */,
 				93A9B2A92734061C00135EBB /* EditBodyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
