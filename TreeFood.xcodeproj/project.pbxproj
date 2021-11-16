@@ -903,9 +903,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20211019;
-				DEVELOPMENT_TEAM = J3HD9656AL;
+				DEVELOPMENT_TEAM = YAJ74PJU3F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TreeFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "树食";
+				INFOPLIST_KEY_NSCameraUsageDescription = "请求访问相机图片用作头像";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请求访问相册图片用作头像";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -916,7 +919,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hut.TreeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.hut.TreeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_ENABLE_BATCH_MODE = "";
@@ -934,9 +937,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20211019;
-				DEVELOPMENT_TEAM = J3HD9656AL;
+				DEVELOPMENT_TEAM = YAJ74PJU3F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TreeFood/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "树食";
+				INFOPLIST_KEY_NSCameraUsageDescription = "请求访问相机图片用作头像";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请求访问相册图片用作头像";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -947,7 +953,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hut.TreeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.hut.TreeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_ENABLE_BATCH_MODE = "";
